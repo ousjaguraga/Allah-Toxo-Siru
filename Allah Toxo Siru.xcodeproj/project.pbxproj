@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84A9C3527A460A600C92F2A /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C3427A460A600C92F2A /* names.json */; };
+		D84A9C3627A460A600C92F2A /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C3427A460A600C92F2A /* names.json */; };
+		D84A9C3827A4699F00C92F2A /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3727A4699F00C92F2A /* NameModel.swift */; };
+		D84A9C3927A4699F00C92F2A /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3727A4699F00C92F2A /* NameModel.swift */; };
+		D84A9C3B27A46ABD00C92F2A /* NameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3A27A46ABD00C92F2A /* NameVM.swift */; };
+		D84A9C3C27A46ABD00C92F2A /* NameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3A27A46ABD00C92F2A /* NameVM.swift */; };
+		D84A9C3E27A47B7200C92F2A /* UtilityExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */; };
+		D84A9C3F27A47B7200C92F2A /* UtilityExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */; };
+		D84A9C4127A4950200C92F2A /* sm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C4027A4950200C92F2A /* sm1.jpg */; };
+		D84A9C4227A4950200C92F2A /* sm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C4027A4950200C92F2A /* sm1.jpg */; };
+		D87D3B9827A6069B00588EB1 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D3B9727A6069B00588EB1 /* Star.swift */; };
 		D894D7B827A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */; };
 		D894D7B927A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */; };
 		D894D7BA27A44CED007C0E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A927A44CEA007C0E6E /* ContentView.swift */; };
@@ -16,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D84A9C3427A460A600C92F2A /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
+		D84A9C3727A4699F00C92F2A /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
+		D84A9C3A27A46ABD00C92F2A /* NameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVM.swift; sourceTree = "<group>"; };
+		D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtentions.swift; sourceTree = "<group>"; };
+		D84A9C4027A4950200C92F2A /* sm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sm1.jpg; sourceTree = "<group>"; };
+		D87D3B9727A6069B00588EB1 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allah_Toxo_SiruApp.swift; sourceTree = "<group>"; };
 		D894D7A927A44CEA007C0E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D894D7AA27A44CEC007C0E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D87D3B9627A6067D00588EB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D87D3B9727A6069B00588EB1 /* Star.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D894D7A227A44CEA007C0E6E = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +79,15 @@
 		D894D7A727A44CEA007C0E6E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D87D3B9627A6067D00588EB1 /* Views */,
 				D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */,
+				D84A9C3727A4699F00C92F2A /* NameModel.swift */,
+				D84A9C3A27A46ABD00C92F2A /* NameVM.swift */,
+				D84A9C3427A460A600C92F2A /* names.json */,
 				D894D7A927A44CEA007C0E6E /* ContentView.swift */,
+				D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */,
 				D894D7AA27A44CEC007C0E6E /* Assets.xcassets */,
+				D84A9C4027A4950200C92F2A /* sm1.jpg */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -123,7 +154,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					D894D7AE27A44CEC007C0E6E = {
 						CreatedOnToolsVersion = 13.0;
@@ -157,6 +188,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84A9C4127A4950200C92F2A /* sm1.jpg in Resources */,
+				D84A9C3527A460A600C92F2A /* names.json in Resources */,
 				D894D7BC27A44CED007C0E6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84A9C4227A4950200C92F2A /* sm1.jpg in Resources */,
+				D84A9C3627A460A600C92F2A /* names.json in Resources */,
 				D894D7BD27A44CED007C0E6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84A9C3827A4699F00C92F2A /* NameModel.swift in Sources */,
 				D894D7BA27A44CED007C0E6E /* ContentView.swift in Sources */,
 				D894D7B827A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */,
+				D87D3B9827A6069B00588EB1 /* Star.swift in Sources */,
+				D84A9C3E27A47B7200C92F2A /* UtilityExtentions.swift in Sources */,
+				D84A9C3B27A46ABD00C92F2A /* NameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84A9C3927A4699F00C92F2A /* NameModel.swift in Sources */,
 				D894D7BB27A44CED007C0E6E /* ContentView.swift in Sources */,
 				D894D7B927A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */,
+				D84A9C3F27A47B7200C92F2A /* UtilityExtentions.swift in Sources */,
+				D84A9C3C27A46ABD00C92F2A /* NameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -399,6 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
