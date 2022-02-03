@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct Allah_Toxo_SiruApp: App {
     var body: some Scene {

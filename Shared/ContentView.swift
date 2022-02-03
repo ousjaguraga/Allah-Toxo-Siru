@@ -49,7 +49,11 @@ struct ContextView: View {
 
 
 
-
+struct Player: View {
+    var body: some View {
+        Image(systemName: "play").font(Font.system(size: 30))
+    }
+}
 struct NameView: View {
     var name: NameModel.Name
     
@@ -70,11 +74,12 @@ struct NameView: View {
                         
                         Circle().strokeBorder(.white).frame(width: geometry.size.width / 4.3, height: geometry.size.height / 4.3)
                         
-                        
+                       
                         Text(String(name.id)).font(.system(size: min(geometry.size.width, geometry.size.height) * DrawingConstants.scaleFactor))
                     }
                     Spacer()
-                    Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.3)).foregroundColor(.green)
+                    Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.26)).foregroundColor(.green)
+                    Player()
                     Spacer()
                     
                     ForEach(name.name){ name in
