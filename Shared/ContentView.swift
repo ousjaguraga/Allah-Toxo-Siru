@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-   @ObservedObject var vm = NameVM()
+   @ObservedObject var nameVM = NameVM()
+  
+    
     var names = ["Allah", "Ahad", "One", "MAalikul Mulk"]
     var body: some View {
         ScrollView {
             VStack {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
-                    ForEach(vm.names){ n in
+                    ForEach(nameVM.names){ n in
                         NameView(name: n)
                             .aspectRatio(2/3, contentMode: .fit)
                             .onTapGesture {
-                                vm.touched(n.id)
+                                nameVM.touched(n.id)
                             }
                             
                     }
@@ -49,11 +51,26 @@ struct ContextView: View {
 
 
 
-struct Player: View {
+struct PlayerView: View {
+    var id: Int
+    @ObservedObject var player: Player
+   
+    
+    init(id myID: Int){
+        self.id = myID
+        player = Player(id: id)
+    }
     var body: some View {
         Image(systemName: "play").font(Font.system(size: 30))
+            .onTapGesture {
+                //print(id)
+                player.play()
+        }
+
     }
 }
+
+
 struct NameView: View {
     var name: NameModel.Name
     
@@ -79,7 +96,7 @@ struct NameView: View {
                     }
                     Spacer()
                     Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.26)).foregroundColor(.green)
-                    Player()
+                    PlayerView(id: name.id)
                     Spacer()
                     
                     ForEach(name.name){ name in

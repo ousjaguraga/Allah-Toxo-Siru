@@ -20,6 +20,16 @@
 		D87D3B9827A6069B00588EB1 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D3B9727A6069B00588EB1 /* Star.swift */; };
 		D87D8D8027AB31AD00D30341 /* baane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D7F27AB31AC00D30341 /* baane.mp3 */; };
 		D87D8D8127AB31AD00D30341 /* baane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D7F27AB31AC00D30341 /* baane.mp3 */; };
+		D87D8D8327AC809B00D30341 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D8D8227AC809B00D30341 /* Player.swift */; };
+		D87D8D8427AC809B00D30341 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D8D8227AC809B00D30341 /* Player.swift */; };
+		D87D8D9227ACB60B00D30341 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9127ACB60B00D30341 /* 1.mp3 */; };
+		D87D8D9327ACB60B00D30341 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9127ACB60B00D30341 /* 1.mp3 */; };
+		D87D8D9627ACB77300D30341 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9527ACB77300D30341 /* 2.mp3 */; };
+		D87D8D9727ACB77300D30341 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9527ACB77300D30341 /* 2.mp3 */; };
+		D87D8D9927ACB7BB00D30341 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9827ACB7BB00D30341 /* 3.mp3 */; };
+		D87D8D9A27ACB7BB00D30341 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9827ACB7BB00D30341 /* 3.mp3 */; };
+		D87D8D9C27ACB7ED00D30341 /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9B27ACB7ED00D30341 /* 11.mp3 */; };
+		D87D8D9D27ACB7ED00D30341 /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87D8D9B27ACB7ED00D30341 /* 11.mp3 */; };
 		D894D7B827A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */; };
 		D894D7B927A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */; };
 		D894D7BA27A44CED007C0E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A927A44CEA007C0E6E /* ContentView.swift */; };
@@ -36,6 +46,11 @@
 		D84A9C4027A4950200C92F2A /* sm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sm1.jpg; sourceTree = "<group>"; };
 		D87D3B9727A6069B00588EB1 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		D87D8D7F27AB31AC00D30341 /* baane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = baane.mp3; sourceTree = "<group>"; };
+		D87D8D8227AC809B00D30341 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D87D8D9127ACB60B00D30341 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		D87D8D9527ACB77300D30341 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		D87D8D9827ACB7BB00D30341 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		D87D8D9B27ACB7ED00D30341 /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
 		D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allah_Toxo_SiruApp.swift; sourceTree = "<group>"; };
 		D894D7A927A44CEA007C0E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D894D7AA27A44CEC007C0E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +85,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D87D8D9427ACB6D400D30341 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				D87D8D9127ACB60B00D30341 /* 1.mp3 */,
+				D87D8D9527ACB77300D30341 /* 2.mp3 */,
+				D87D8D9B27ACB7ED00D30341 /* 11.mp3 */,
+				D87D8D9827ACB7BB00D30341 /* 3.mp3 */,
+				D87D8D7F27AB31AC00D30341 /* baane.mp3 */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		D894D7A227A44CEA007C0E6E = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +113,9 @@
 				D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */,
 				D84A9C3727A4699F00C92F2A /* NameModel.swift */,
 				D84A9C3A27A46ABD00C92F2A /* NameVM.swift */,
+				D87D8D8227AC809B00D30341 /* Player.swift */,
 				D84A9C3427A460A600C92F2A /* names.json */,
-				D87D8D7F27AB31AC00D30341 /* baane.mp3 */,
+				D87D8D9427ACB6D400D30341 /* audio */,
 				D894D7A927A44CEA007C0E6E /* ContentView.swift */,
 				D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */,
 				D894D7AA27A44CEC007C0E6E /* Assets.xcassets */,
@@ -192,9 +220,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87D8D9227ACB60B00D30341 /* 1.mp3 in Resources */,
+				D87D8D9927ACB7BB00D30341 /* 3.mp3 in Resources */,
 				D84A9C4127A4950200C92F2A /* sm1.jpg in Resources */,
 				D84A9C3527A460A600C92F2A /* names.json in Resources */,
+				D87D8D9627ACB77300D30341 /* 2.mp3 in Resources */,
 				D87D8D8027AB31AD00D30341 /* baane.mp3 in Resources */,
+				D87D8D9C27ACB7ED00D30341 /* 11.mp3 in Resources */,
 				D894D7BC27A44CED007C0E6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,9 +235,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87D8D9327ACB60B00D30341 /* 1.mp3 in Resources */,
+				D87D8D9A27ACB7BB00D30341 /* 3.mp3 in Resources */,
 				D84A9C4227A4950200C92F2A /* sm1.jpg in Resources */,
 				D84A9C3627A460A600C92F2A /* names.json in Resources */,
+				D87D8D9727ACB77300D30341 /* 2.mp3 in Resources */,
 				D87D8D8127AB31AD00D30341 /* baane.mp3 in Resources */,
+				D87D8D9D27ACB7ED00D30341 /* 11.mp3 in Resources */,
 				D894D7BD27A44CED007C0E6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +257,7 @@
 				D894D7BA27A44CED007C0E6E /* ContentView.swift in Sources */,
 				D894D7B827A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */,
 				D87D3B9827A6069B00588EB1 /* Star.swift in Sources */,
+				D87D8D8327AC809B00D30341 /* Player.swift in Sources */,
 				D84A9C3E27A47B7200C92F2A /* UtilityExtentions.swift in Sources */,
 				D84A9C3B27A46ABD00C92F2A /* NameVM.swift in Sources */,
 			);
@@ -234,6 +271,7 @@
 				D894D7BB27A44CED007C0E6E /* ContentView.swift in Sources */,
 				D894D7B927A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */,
 				D84A9C3F27A47B7200C92F2A /* UtilityExtentions.swift in Sources */,
+				D87D8D8427AC809B00D30341 /* Player.swift in Sources */,
 				D84A9C3C27A46ABD00C92F2A /* NameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
