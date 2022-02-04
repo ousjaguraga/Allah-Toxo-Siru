@@ -54,21 +54,34 @@ struct ContextView: View {
 struct PlayerView: View {
     var id: Int
     @ObservedObject var player: Player
-   
+    @State var isPlaying: Bool = false
+    @State var timer = Timer.publish(every: 0.1,  on: .main, in: .common).autoconnect()
+    
+    
     
     init(id myID: Int){
         self.id = myID
         player = Player(id: id)
     }
+    
     var body: some View {
-        Image(systemName: "play").font(Font.system(size: 30))
-            .onTapGesture {
-                //print(id)
-                player.play()
+        VStack {
+            Button(action: { player.togglePlay() }) {
+                Image(systemName: isPlaying ? "pause.fill" : "play.fill").font(.title).foregroundColor(.white)
+            }
+        }.onReceive(timer) { (_) in
+            if player.player.isPlaying {
+                isPlaying = true
+            } else {
+               isPlaying = false
+            }
         }
-
+        
     }
 }
+
+
+
 
 
 struct NameView: View {
@@ -118,6 +131,8 @@ struct DrawingConstants {
     static var borderColor: Color = .green
     static var scaleFactor: CGFloat = 0.079
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

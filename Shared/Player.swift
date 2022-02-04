@@ -11,6 +11,8 @@ import AVKit
 
 class Player: ObservableObject {
     @Published  var player = AVAudioPlayer()
+    // var isPlaying: Bool = false
+    
     
     // empty init
     init(){}
@@ -24,7 +26,6 @@ class Player: ObservableObject {
                 player = try AVAudioPlayer(data: data)
                 player.prepareToPlay()
                
-               
             } catch {
                 print("Error")
             }
@@ -32,7 +33,20 @@ class Player: ObservableObject {
         }
     }
     
-   func play(){
+    func play(){
+       
         player.play()
+    }
+    
+    func pause(){
+        player.pause()
+    }
+    
+   func togglePlay(){
+       if player.isPlaying {
+           pause()
+       } else {
+           play()
+       }
     }
 }
