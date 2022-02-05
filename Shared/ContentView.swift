@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-   @ObservedObject var vm = NameVM()
+   @ObservedObject var nameVM = NameVM()
+  
+    
     var names = ["Allah", "Ahad", "One", "MAalikul Mulk"]
     var body: some View {
         ScrollView {
             VStack {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
-                    ForEach(vm.names){ n in
+                    ForEach(nameVM.names){ n in
                         NameView(name: n)
                             .aspectRatio(2/3, contentMode: .fit)
                             .onTapGesture {
-                                vm.touched(n.id)
+                                nameVM.touched(n.id)
                             }
                             
                     }
@@ -49,6 +51,38 @@ struct ContextView: View {
 
 
 
+struct PlayerView: View {
+    var id: Int
+    @ObservedObject var player: Player
+    @State var isPlaying: Bool = false
+    @State var timer = Timer.publish(every: 0.1,  on: .main, in: .common).autoconnect()
+    
+    
+    
+    init(id myID: Int){
+        self.id = myID
+        player = Player(id: id)
+    }
+    
+    var body: some View {
+        VStack {
+            Button(action: { player.togglePlay() }) {
+                Image(systemName: isPlaying ? "pause.fill" : "play.fill").font(.title).foregroundColor(.white)
+            }
+        }.onReceive(timer) { (_) in
+            if player.player.isPlaying {
+                isPlaying = true
+            } else {
+               isPlaying = false
+            }
+        }
+        
+    }
+}
+
+
+
+
 
 struct NameView: View {
     var name: NameModel.Name
@@ -70,11 +104,12 @@ struct NameView: View {
                         
                         Circle().strokeBorder(.white).frame(width: geometry.size.width / 4.3, height: geometry.size.height / 4.3)
                         
-                        
+                       
                         Text(String(name.id)).font(.system(size: min(geometry.size.width, geometry.size.height) * DrawingConstants.scaleFactor))
                     }
                     Spacer()
-                    Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.3)).foregroundColor(.green)
+                    Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.26)).foregroundColor(.green)
+                    PlayerView(id: name.id)
                     Spacer()
                     
                     ForEach(name.name){ name in
@@ -96,6 +131,8 @@ struct DrawingConstants {
     static var borderColor: Color = .green
     static var scaleFactor: CGFloat = 0.079
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

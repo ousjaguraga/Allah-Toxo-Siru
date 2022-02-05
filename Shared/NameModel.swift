@@ -17,6 +17,7 @@ struct NameModel:  Codable {
         var arabic: String
         var touched: Bool
     }
+    
     init (){}
     
     init(json: Data) throws {
@@ -41,6 +42,12 @@ struct NameModel:  Codable {
             chosenName.touched = true
             names[id - 1] = chosenName
         }
+    }
+    
+    func getNameWith(id theID: Int) -> String {
+        print(names)
+        let index = names.firstIndex(where: {$0.id == theID})!
+        return names[index - 1].name[0]
     }
     
 }
