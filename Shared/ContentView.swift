@@ -91,10 +91,10 @@ struct NameView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                let shape = RoundedRectangle(cornerRadius: 10)
+                let shape = RoundedRectangle(cornerRadius: 12)
                
                 shape.fill(name.touched ?  .primaryLight : Color.accentColor)
-                shape.strokeBorder(lineWidth: 3).foregroundColor(.green)
+                shape.strokeBorder(lineWidth: 3).foregroundColor(.green).cornerRadius(12)
                 VStack {
                     
                     ZStack {
