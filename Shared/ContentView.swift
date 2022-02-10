@@ -10,10 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
    @ObservedObject var nameVM = NameVM()
-  
-    
-    var names = ["Allah", "Ahad", "One", "MAalikul Mulk"]
-    var body: some View {
+
+   var body: some View {
         ScrollView {
             VStack {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
@@ -21,14 +19,11 @@ struct ContentView: View {
                         NameView(name: n)
                             .aspectRatio(2/3, contentMode: .fit)
                             .onTapGesture {
-                                nameVM.touched(n.id)
+                                    nameVM.touched(n.id)
                             }
-                            
                     }
                 }
             }.padding()
-                
-           
         }
     }
 }
@@ -55,8 +50,7 @@ struct PlayerView: View {
     var id: Int
     @ObservedObject var player: Player
     @State var isPlaying: Bool = false
-    @State var timer = Timer.publish(every: 0.1,  on: .main, in: .common).autoconnect()
-    
+    @State var timer = Timer.publish(every: 0.01,  on: .main, in: .common).autoconnect()
     
     
     init(id myID: Int){
@@ -67,7 +61,7 @@ struct PlayerView: View {
     var body: some View {
         VStack {
             Button(action: { player.togglePlay() }) {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill").font(.title).foregroundColor(.white)
+                Image(systemName: isPlaying ? "pause.fill" : "play").font(.title).foregroundColor(.white)
             }
         }.onReceive(timer) { (_) in
             if player.player.isPlaying {
@@ -86,8 +80,7 @@ struct PlayerView: View {
 
 struct NameView: View {
     var name: NameModel.Name
-    
-    
+   
     var body: some View {
         GeometryReader { geometry in
             ZStack {

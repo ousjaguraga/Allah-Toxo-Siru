@@ -34,7 +34,6 @@ class Player: ObservableObject {
     }
     
     func play(){
-       
         player.play()
     }
     
