@@ -24,8 +24,6 @@ class NameVM: ObservableObject {
         if let path = Bundle.main.path(forResource: "names", ofType: "json"){
             let url = URL(fileURLWithPath: path)
             model = try! NameModel(url: url)
-            
-            
         }
     }
     

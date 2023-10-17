@@ -88,8 +88,8 @@
 		D8CAD02727B6D18B00D8673C /* 41.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00027B6D18A00D8673C /* 41.mp3 */; };
 		D8CAD02827B6D18B00D8673C /* 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00127B6D18A00D8673C /* 22.mp3 */; };
 		D8CAD02927B6D18B00D8673C /* 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00127B6D18A00D8673C /* 22.mp3 */; };
-		D8CAD02A27B6D18B00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00227B6D18A00D8673C /* 36.mp3 */; };
-		D8CAD02B27B6D18B00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00227B6D18A00D8673C /* 36.mp3 */; };
+		D8CAD02A27B6D18B00D8673C /* 35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00227B6D18A00D8673C /* 35.mp3 */; };
+		D8CAD02B27B6D18B00D8673C /* 35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00227B6D18A00D8673C /* 35.mp3 */; };
 		D8CAD02C27B6D18B00D8673C /* 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00327B6D18A00D8673C /* 21.mp3 */; };
 		D8CAD02D27B6D18B00D8673C /* 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00327B6D18A00D8673C /* 21.mp3 */; };
 		D8CAD02E27B6D18B00D8673C /* 38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD00427B6D18B00D8673C /* 38.mp3 */; };
@@ -220,6 +220,8 @@
 		D8CAD0DF27B6D1B700D8673C /* 86.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD07827B6D1B700D8673C /* 86.mp3 */; };
 		D8CAD0E027B6D1B700D8673C /* 80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD07927B6D1B700D8673C /* 80.mp3 */; };
 		D8CAD0E127B6D1B700D8673C /* 80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD07927B6D1B700D8673C /* 80.mp3 */; };
+		D8CAD0E327B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
+		D8CAD0E427B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -267,7 +269,7 @@
 		D8CACFFF27B6D18A00D8673C /* 47.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 47.mp3; sourceTree = "<group>"; };
 		D8CAD00027B6D18A00D8673C /* 41.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 41.mp3; sourceTree = "<group>"; };
 		D8CAD00127B6D18A00D8673C /* 22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 22.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/22.mp3"; sourceTree = "<group>"; };
-		D8CAD00227B6D18A00D8673C /* 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36.mp3; sourceTree = "<group>"; };
+		D8CAD00227B6D18A00D8673C /* 35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 35.mp3; sourceTree = "<group>"; };
 		D8CAD00327B6D18A00D8673C /* 21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 21.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/21.mp3"; sourceTree = "<group>"; };
 		D8CAD00427B6D18B00D8673C /* 38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 38.mp3; sourceTree = "<group>"; };
 		D8CAD00527B6D18B00D8673C /* 33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 33.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/33.mp3"; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 		D8CAD07727B6D1B600D8673C /* 69.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 69.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/69.mp3"; sourceTree = "<group>"; };
 		D8CAD07827B6D1B700D8673C /* 86.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 86.mp3; sourceTree = "<group>"; };
 		D8CAD07927B6D1B700D8673C /* 80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80.mp3; sourceTree = "<group>"; };
+		D8CAD0E227B6D6BC00D8673C /* 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,7 +400,8 @@
 				D8CACFF527B6D18A00D8673C /* 32.mp3 */,
 				D8CAD00527B6D18B00D8673C /* 33.mp3 */,
 				D8CAD00927B6D18B00D8673C /* 34.mp3 */,
-				D8CAD00227B6D18A00D8673C /* 36.mp3 */,
+				D8CAD00227B6D18A00D8673C /* 35.mp3 */,
+				D8CAD0E227B6D6BC00D8673C /* 36.mp3 */,
 				D8CAD00E27B6D18B00D8673C /* 37.mp3 */,
 				D8CAD00427B6D18B00D8673C /* 38.mp3 */,
 				D8CACFFB27B6D18A00D8673C /* 39.mp3 */,
@@ -619,6 +623,7 @@
 				D8CAD0A827B6D1B700D8673C /* 52.mp3 in Resources */,
 				D8CAD09227B6D1B700D8673C /* 72.mp3 in Resources */,
 				D8CAD09627B6D1B700D8673C /* 54.mp3 in Resources */,
+				D8CAD0E327B6D6BC00D8673C /* 36.mp3 in Resources */,
 				D8CAD0CA27B6D1B700D8673C /* 56.mp3 in Resources */,
 				D8CACFD527B6D17000D8673C /* 15.mp3 in Resources */,
 				D8CAD0A227B6D1B700D8673C /* 61.mp3 in Resources */,
@@ -644,7 +649,7 @@
 				D8CAD08E27B6D1B700D8673C /* 58.mp3 in Resources */,
 				D8CAD09027B6D1B700D8673C /* 64.mp3 in Resources */,
 				D8CAD07A27B6D1B700D8673C /* 90.mp3 in Resources */,
-				D8CAD02A27B6D18B00D8673C /* 36.mp3 in Resources */,
+				D8CAD02A27B6D18B00D8673C /* 35.mp3 in Resources */,
 				D8CAD0DC27B6D1B700D8673C /* 69.mp3 in Resources */,
 				D8CAD0B027B6D1B700D8673C /* 92.mp3 in Resources */,
 				D8CAD08827B6D1B700D8673C /* 83.mp3 in Resources */,
@@ -726,6 +731,7 @@
 				D8CAD0A927B6D1B700D8673C /* 52.mp3 in Resources */,
 				D8CAD09327B6D1B700D8673C /* 72.mp3 in Resources */,
 				D8CAD09727B6D1B700D8673C /* 54.mp3 in Resources */,
+				D8CAD0E427B6D6BC00D8673C /* 36.mp3 in Resources */,
 				D8CAD0CB27B6D1B700D8673C /* 56.mp3 in Resources */,
 				D8CACFD627B6D17000D8673C /* 15.mp3 in Resources */,
 				D8CAD0A327B6D1B700D8673C /* 61.mp3 in Resources */,
@@ -751,7 +757,7 @@
 				D8CAD08F27B6D1B700D8673C /* 58.mp3 in Resources */,
 				D8CAD09127B6D1B700D8673C /* 64.mp3 in Resources */,
 				D8CAD07B27B6D1B700D8673C /* 90.mp3 in Resources */,
-				D8CAD02B27B6D18B00D8673C /* 36.mp3 in Resources */,
+				D8CAD02B27B6D18B00D8673C /* 35.mp3 in Resources */,
 				D8CAD0DD27B6D1B700D8673C /* 69.mp3 in Resources */,
 				D8CAD0B127B6D1B700D8673C /* 92.mp3 in Resources */,
 				D8CAD08927B6D1B700D8673C /* 83.mp3 in Resources */,
@@ -955,8 +961,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -966,6 +972,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaguraga.todo.Allah-Toxo-Siru";
 				PRODUCT_NAME = "Allah Toxo Siru";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -985,8 +994,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -996,6 +1005,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaguraga.todo.Allah-Toxo-Siru";
 				PRODUCT_NAME = "Allah Toxo Siru";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
