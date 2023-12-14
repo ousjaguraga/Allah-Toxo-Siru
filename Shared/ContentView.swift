@@ -6,105 +6,87 @@ import SwiftUI
 
 // MARK: - Main ContentView
 struct ContentView: View {
-    
     @ObservedObject var nameVM = NameVM()
     
     var body: some View {
         
-        VStack {
-            Text("ALLA TOXO SIRU")
-                .font(.title)
-            NavigationView {
-                ListView(names: nameVM.names, nameVM: nameVM)
+        ZStack {
+            VStack {
+                Text("ALLA TOXO SIRU").foregroundColor(.accentColor).padding(50).font(.largeTitle)
+                NavigationView {
+                        MichaelList(names: nameVM.names, nameVM: nameVM)
+                }
             }
         }
+        .background(Color.backgroundOne).edgesIgnoringSafeArea(.all)
     }
 }
 
-// MARK: - ListView
-struct ListView: View {
-    var names: [NameModel.Name]
-    @ObservedObject var nameVM: NameVM
-    
-    var body: some View {
-        
-        if #available(iOS 16.0, *) {
-            List(names) { n in
-                NavigationLink(destination: DetailView(name: n)) {
-                    Text(String(n.id))
-                        .font(.caption)
-                    Text(n.name[0].uppercased())
-                    Text(n.arabic)
-                        .font(.headline)
-                  }
-               }
-            .scrollContentBackground(.hidden)
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.all)
-         
-            
-        } else {
-            List(names) { n in
-                NavigationLink(destination: DetailView(name: n)) {
-                    Text(String(n.id))
-                        .font(.caption)
-                    Text(n.name[0].uppercased())
-                    Text(n.arabic)
-                        .font(.headline)
-                  }
-               }
-                 .listStyle(.plain)
-        }
-          
-           
-            
-    }
-}
+
+
 
 
 
 // MARK: - DetailView
 struct DetailView: View {
     var name: NameModel.Name
+
+    // Gradient colors for background
+    let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
+
     var body: some View {
-            GeometryReader { geometry in
-                ZStack {
-                    let shape = RoundedRectangle(cornerRadius: 12)
-                   
-                    shape.fill(name.touched ?  .primaryLight : Color.accentColor)
-                    shape.strokeBorder(lineWidth: 3).foregroundColor(.green).cornerRadius(12)
-                    VStack {
+        GeometryReader { geometry in
+            ZStack {
+                let shape = RoundedRectangle(cornerRadius: 12)
+                
+                // Applying gradient to the background
+                shape.fill(LinearGradient(gradient: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing))
+                
+                shape.strokeBorder(Color.green.opacity(0.7), lineWidth: 3)
+                    .shadow(radius: 10)
+                
+                VStack(spacing: 20) {
+                    ZStack {
+                        Star(corners: 5, smoothness: 0.43)
+                            .frame(width: min(geometry.size.width, geometry.size.width) * 0.223, height: min(geometry.size.width, geometry.size.width) * 0.223)
+                            .foregroundColor(.green).padding()
                         
-                        ZStack {
-                            
-                            Star(corners: 5, smoothness: 0.43).frame(width: min(geometry.size.width , geometry.size.width) * 0.223, height: min(geometry.size.width , geometry.size.width) * 0.223)
-                                .foregroundColor(.green)
-                            
-                            Circle().strokeBorder(.white).frame(width: geometry.size.width / 4.3, height: geometry.size.height / 4.3)
-                            
-                           
-                            Text(String(name.id)).font(.system(size: min(geometry.size.width, geometry.size.height) * DrawingConstants.scaleFactor))
-                        }
-                        Spacer()
-                        Text(name.arabic).font(.system(size: min(geometry.size.width, geometry.size.height) * 0.26)).foregroundColor(.green)
-                        PlayerView(id: name.id)
-                        Spacer()
+                        Circle()
+                            .strokeBorder(Color.white.opacity(0.8), lineWidth: 3)
+                            .frame(width: geometry.size.width / 4.5, height: geometry.size.height / 4.5)
+                            .shadow(radius: 5)
                         
-                        ForEach(name.name){ name in
-                            
-                            Text(name).font(.system(size: min(geometry.size.width, geometry.size.height) * DrawingConstants.scaleFactor))
-                            Divider().background(Color.white).padding(.top, 0)
-                            
-                        }
-                          .foregroundColor(.white)
-                    }.padding()
-                        
+                        Text(String(name.id))
+                            .font(.system(size: geometry.size.width * 0.1))
+                            .foregroundColor(.white)
+                    }
                     
+                    Text(name.arabic)
+                        .font(.system(size: geometry.size.width * 0.2))
+                        .foregroundColor(.white)
+                        .shadow(radius: 5)
+                    
+                    PlayerView(id: name.id)
+                    
+                    ForEach(name.name) { name in
+                        Text(name)
+                            .font(.system(size: geometry.size.width * 0.08))
+                            .foregroundColor(.white)
+                        Divider()
+                            .background(Color.white.opacity(0.7))
+                            .padding(.vertical, 5)
+                    }
                 }
+                //.padding(20)
             }
-            
-        }
+            .padding(20).padding(.vertical, 50)
+            .cornerRadius(25)
+            .shadow(radius: 15)
+        }.background(Color.backgroundOne).edgesIgnoringSafeArea(.all)
+    }
 }
+
+
 
 // MARK: - PlayerView
 struct PlayerView: View {
@@ -141,7 +123,14 @@ struct DrawingConstants {
 // MARK: - Previews
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
+            ContentView()
+                .preferredColorScheme(.light)
+          
+        }
     }
 }
+
 

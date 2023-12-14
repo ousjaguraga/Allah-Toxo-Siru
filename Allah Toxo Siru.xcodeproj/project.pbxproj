@@ -17,6 +17,8 @@
 		D84A9C3F27A47B7200C92F2A /* UtilityExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */; };
 		D84A9C4127A4950200C92F2A /* sm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C4027A4950200C92F2A /* sm1.jpg */; };
 		D84A9C4227A4950200C92F2A /* sm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84A9C4027A4950200C92F2A /* sm1.jpg */; };
+		D853D63D2AE6D6C8001FFAFC /* Michael.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853D63C2AE6D6C8001FFAFC /* Michael.swift */; };
+		D853D63F2AE6DF66001FFAFC /* CircleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853D63E2AE6DF66001FFAFC /* CircleName.swift */; };
 		D87D3B9827A6069B00588EB1 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D3B9727A6069B00588EB1 /* Star.swift */; };
 		D87D8D8327AC809B00D30341 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D8D8227AC809B00D30341 /* Player.swift */; };
 		D87D8D8427AC809B00D30341 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D8D8227AC809B00D30341 /* Player.swift */; };
@@ -222,6 +224,7 @@
 		D8CAD0E127B6D1B700D8673C /* 80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD07927B6D1B700D8673C /* 80.mp3 */; };
 		D8CAD0E327B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
 		D8CAD0E427B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
+		D8F5B37C2AE81547009B3600 /* Jim.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5B37B2AE81547009B3600 /* Jim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +233,8 @@
 		D84A9C3A27A46ABD00C92F2A /* NameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVM.swift; sourceTree = "<group>"; };
 		D84A9C3D27A47B7200C92F2A /* UtilityExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtentions.swift; sourceTree = "<group>"; };
 		D84A9C4027A4950200C92F2A /* sm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sm1.jpg; sourceTree = "<group>"; };
+		D853D63C2AE6D6C8001FFAFC /* Michael.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Michael.swift; sourceTree = "<group>"; };
+		D853D63E2AE6DF66001FFAFC /* CircleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleName.swift; sourceTree = "<group>"; };
 		D87D3B9727A6069B00588EB1 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		D87D8D8227AC809B00D30341 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D894D7A827A44CEA007C0E6E /* Allah_Toxo_SiruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allah_Toxo_SiruApp.swift; sourceTree = "<group>"; };
@@ -336,6 +341,7 @@
 		D8CAD07827B6D1B700D8673C /* 86.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 86.mp3; sourceTree = "<group>"; };
 		D8CAD07927B6D1B700D8673C /* 80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80.mp3; sourceTree = "<group>"; };
 		D8CAD0E227B6D6BC00D8673C /* 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36.mp3; sourceTree = "<group>"; };
+		D8F5B37B2AE81547009B3600 /* Jim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +366,9 @@
 			isa = PBXGroup;
 			children = (
 				D87D3B9727A6069B00588EB1 /* Star.swift */,
+				D853D63C2AE6D6C8001FFAFC /* Michael.swift */,
+				D8F5B37B2AE81547009B3600 /* Jim.swift */,
+				D853D63E2AE6DF66001FFAFC /* CircleName.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -814,9 +823,12 @@
 				D84A9C3827A4699F00C92F2A /* NameModel.swift in Sources */,
 				D894D7BA27A44CED007C0E6E /* ContentView.swift in Sources */,
 				D894D7B827A44CED007C0E6E /* Allah_Toxo_SiruApp.swift in Sources */,
+				D853D63D2AE6D6C8001FFAFC /* Michael.swift in Sources */,
+				D8F5B37C2AE81547009B3600 /* Jim.swift in Sources */,
 				D87D3B9827A6069B00588EB1 /* Star.swift in Sources */,
 				D87D8D8327AC809B00D30341 /* Player.swift in Sources */,
 				D84A9C3E27A47B7200C92F2A /* UtilityExtentions.swift in Sources */,
+				D853D63F2AE6DF66001FFAFC /* CircleName.swift in Sources */,
 				D84A9C3B27A46ABD00C92F2A /* NameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -977,7 +989,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1010,7 +1022,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

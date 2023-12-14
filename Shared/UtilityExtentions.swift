@@ -19,4 +19,11 @@ extension String: Identifiable{
 
 extension Color {
     static let primaryLight = Color("PrimaryLight")
+    static let islamicGold = Color("islamicGold")
+    static let islamicGoldDark = Color("islamicGoldDark")
+    static let backgroundOne = Color("backgroundOne")
+}
+
+var backgroundGradient: LinearGradient {
+    LinearGradient(gradient: Gradient(colors: [Color.islamicGold, Color.islamicGoldDark]), startPoint: .topLeading, endPoint: .bottomTrailing)
 }
