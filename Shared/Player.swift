@@ -40,6 +40,9 @@ class Player: ObservableObject {
     func pause(){
         player.pause()
     }
+    func stop(){
+        player.stop()
+    }
     
    func togglePlay(){
        if player.isPlaying {

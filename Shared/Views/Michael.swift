@@ -16,7 +16,7 @@ struct MichaelList: View {
         ScrollView {
             LazyVGrid(columns: columnLayout){
                     ForEach(names) { n in
-                        NavigationLink(destination: DetailView(name: n)) {
+                        NavigationLink(destination:SwipeableView(names: nameVM.names)) {
                             HStack {
                                 VStack {
                                     ZStack {

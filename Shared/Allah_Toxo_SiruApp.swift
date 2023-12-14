@@ -12,7 +12,8 @@ import SwiftUI
 struct Allah_Toxo_SiruApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            SplashView()
         }
     }
 }

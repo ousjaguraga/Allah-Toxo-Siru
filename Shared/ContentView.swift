@@ -24,95 +24,68 @@ struct ContentView: View {
 
 
 
-
-
-
-// MARK: - DetailView
-struct DetailView: View {
-    var name: NameModel.Name
-
-    // Gradient colors for background
-    let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
+struct SwipeableViewd: View {
+    var names: [NameModel.Name]
+    @State private var selectedTab = 0
 
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                let shape = RoundedRectangle(cornerRadius: 12)
-                
-                // Applying gradient to the background
-                shape.fill(LinearGradient(gradient: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing))
-                
-                shape.strokeBorder(Color.green.opacity(0.7), lineWidth: 3)
-                    .shadow(radius: 10)
-                
-                VStack(spacing: 20) {
-                    ZStack {
-                        Star(corners: 5, smoothness: 0.43)
-                            .frame(width: min(geometry.size.width, geometry.size.width) * 0.223, height: min(geometry.size.width, geometry.size.width) * 0.223)
-                            .foregroundColor(.green).padding()
-                        
-                        Circle()
-                            .strokeBorder(Color.white.opacity(0.8), lineWidth: 3)
-                            .frame(width: geometry.size.width / 4.5, height: geometry.size.height / 4.5)
-                            .shadow(radius: 5)
-                        
-                        Text(String(name.id))
-                            .font(.system(size: geometry.size.width * 0.1))
-                            .foregroundColor(.white)
-                    }
-                    
-                    Text(name.arabic)
-                        .font(.system(size: geometry.size.width * 0.2))
-                        .foregroundColor(.white)
-                        .shadow(radius: 5)
-                    
-                    PlayerView(id: name.id)
-                    
-                    ForEach(name.name) { name in
-                        Text(name)
-                            .font(.system(size: geometry.size.width * 0.08))
-                            .foregroundColor(.white)
-                        Divider()
-                            .background(Color.white.opacity(0.7))
-                            .padding(.vertical, 5)
+        TabView(selection: $selectedTab) {
+            ForEach(names.indices, id: \.self) { index in
+                DetailView(name: names[index])
+            }
+        }
+        .background(Color.backgroundOne)
+        .edgesIgnoringSafeArea(.all)
+        .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+    }
+}
+
+
+struct SwipeableView: View {
+    var names: [NameModel.Name]
+    @State private var selectedTab = 0
+    @State private var isAutoPlaying = false
+    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect() // Change 3 to desired interval
+
+    var body: some View {
+        ZStack {
+            VStack {
+                TabView(selection: $selectedTab) {
+                    ForEach(names.indices, id: \.self) { index in
+                DetailView(name: names[index], isAutoPlaying: isAutoPlaying)
+                            .tag(index)
                     }
                 }
-                //.padding(20)
+                .background(Color.backgroundOne)
+                .edgesIgnoringSafeArea(.all)
+                .tabViewStyle(PageTabViewStyle())
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                
+              
+                
             }
-            .padding(20).padding(.vertical, 50)
-            .cornerRadius(25)
-            .shadow(radius: 15)
-        }.background(Color.backgroundOne).edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.bottom)
+            .background(Color.backgroundOne)
+            
+            .onReceive(timer) { _ in
+                if isAutoPlaying {
+                    withAnimation {
+                        selectedTab = (selectedTab + 1) % names.count
+                    }
+                }
+            }
+            VStack(alignment: .leading){
+                Button(isAutoPlaying ? "Stop" : "Play All") {
+                    isAutoPlaying.toggle()
+                }
+                Spacer()
+            }
+        }.padding(.bottom, -1).background(Color.backgroundOne)
     }
 }
 
 
-
-// MARK: - PlayerView
-struct PlayerView: View {
-    var id: Int
-    @ObservedObject var player: Player
-    @State var isPlaying: Bool = false
-    @State var timer = Timer.publish(every: 0.01,  on: .main, in: .common).autoconnect()
-    
-    init(id myID: Int){
-        self.id = myID
-        player = Player(id: id)
-    }
-    
-    var body: some View {
-        VStack {
-            Button(action: { player.togglePlay() }) {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
-                    .font(.title)
-                    .foregroundColor(.white)
-            }
-        }
-        .onReceive(timer) { _ in
-            isPlaying = player.player.isPlaying
-        }
-    }
-}
 
 // MARK: - Drawing Constants
 struct DrawingConstants {
@@ -120,10 +93,24 @@ struct DrawingConstants {
     static let scaleFactor: CGFloat = 0.079
 }
 
+extension NameModel.Name {
+    static var SwipeablePreviewData: [NameModel.Name] {
+        [
+            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
+            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
+            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
+           
+        ]
+    }
+}
+
+
 // MARK: - Previews
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         Group {
+            SwipeableView(names: NameModel.Name.SwipeablePreviewData)
             ContentView()
                 .preferredColorScheme(.dark)
             ContentView()
