@@ -3,14 +3,14 @@ import SwiftUI
 // MARK: - PlayerView
 struct PlayerView: View {
     var id: Int
-    @State var autoPlay: Bool = false
+    @State var playAll: Bool = false
     @ObservedObject var player: Player
     @State var isPlaying: Bool = false
     @State var timer = Timer.publish(every: 0.01,  on: .main, in: .common).autoconnect()
     
-    init(id myID: Int, isAutoPlaying autoPlayStatus: Bool){
+    init(id myID: Int, playAll autoPlayStatus: Bool){
         self.id = myID
-        self.autoPlay = autoPlayStatus
+        self.playAll = autoPlayStatus
         player = Player(id: id)
     }
     
@@ -23,10 +23,11 @@ struct PlayerView: View {
             }
         }
         .onAppear{
-            if (player.player.isPlaying){
-                player.player.stop()
+            if (isPlaying){
+                player.stop()
             }
-            if (autoPlay){
+            if (playAll){
+                player.stop()
                 player.togglePlay()
             }
            

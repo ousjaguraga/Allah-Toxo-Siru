@@ -23,47 +23,36 @@ struct ContentView: View {
 }
 
 
-
-struct SwipeableViewd: View {
-    var names: [NameModel.Name]
-    @State private var selectedTab = 0
-
-    var body: some View {
-        TabView(selection: $selectedTab) {
-            ForEach(names.indices, id: \.self) { index in
-                DetailView(name: names[index])
-            }
-        }
-        .background(Color.backgroundOne)
-        .edgesIgnoringSafeArea(.all)
-        .tabViewStyle(PageTabViewStyle())
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-    }
-}
-
-
 struct SwipeableView: View {
+    @ObservedObject var nameVM = NameVM()
     var names: [NameModel.Name]
     @State private var selectedTab = 0
     @State private var isAutoPlaying = false
+    @State var playAll = false
+    @State  var name: Int
     let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect() // Change 3 to desired interval
 
     var body: some View {
         ZStack {
             VStack {
+                
                 TabView(selection: $selectedTab) {
-                    ForEach(names.indices, id: \.self) { index in
-                DetailView(name: names[index], isAutoPlaying: isAutoPlaying)
-                            .tag(index)
+                    if (isAutoPlaying){
+                        ForEach(names.indices, id: \.self) { index in
+                         DetailView(name: names[index], playAll: playAll)
+                                        .tag(index)
+                        }
+                    } else {
+                        
+                            DetailView(name: names[name-1], playAll: false)
+                                      
                     }
+                   
                 }
                 .background(Color.backgroundOne)
                 .edgesIgnoringSafeArea(.all)
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-                
-              
-                
             }
             .edgesIgnoringSafeArea(.bottom)
             .background(Color.backgroundOne)
@@ -93,31 +82,10 @@ struct DrawingConstants {
     static let scaleFactor: CGFloat = 0.079
 }
 
-extension NameModel.Name {
-    static var SwipeablePreviewData: [NameModel.Name] {
-        [
-            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
-            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
-            NameModel.Name(id: 1, name: ["Name 1"], arabic: "اسم ١", touched: false),
-           
-        ]
-    }
+
+
+
+#Preview {
+    ContentView()
 }
-
-
-// MARK: - Previews
-struct ContentView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Group {
-            SwipeableView(names: NameModel.Name.SwipeablePreviewData)
-            ContentView()
-                .preferredColorScheme(.dark)
-            ContentView()
-                .preferredColorScheme(.light)
-          
-        }
-    }
-}
-
 

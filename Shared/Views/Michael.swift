@@ -16,7 +16,7 @@ struct MichaelList: View {
         ScrollView {
             LazyVGrid(columns: columnLayout){
                     ForEach(names) { n in
-                        NavigationLink(destination:SwipeableView(names: nameVM.names)) {
+                        NavigationLink(destination:SwipeableView(names: nameVM.names, name: n.id)) {
                             HStack {
                                 VStack {
                                     ZStack {
@@ -44,4 +44,7 @@ struct MichaelList: View {
         .edgesIgnoringSafeArea(.bottom)
     }
 }
+
+
+
 

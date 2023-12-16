@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DetailView: View {
     var name: NameModel.Name
-    @State var isAutoPlaying: Bool = false
+    @State var playAll: Bool = false
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
 
@@ -38,7 +38,7 @@ struct DetailView: View {
                         .foregroundColor(.white)
                         .shadow(radius: 5)
                     
-                    PlayerView(id: name.id, isAutoPlaying: isAutoPlaying)
+                    PlayerView(id: name.id, playAll: playAll)
                     
                     ForEach(name.name) { name in
                         Text(name)
@@ -59,17 +59,3 @@ struct DetailView: View {
 }
 
 
-// Example extension for preview data
-extension NameModel.Name {
-    static var previewData: NameModel.Name {
-        NameModel.Name(id: 1, name: ["BATTITUNKA"], arabic: "‎اللَّهُ", touched: false)
-    }
-}
-
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(name: NameModel.Name.previewData)
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
-}
