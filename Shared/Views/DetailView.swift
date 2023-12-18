@@ -5,7 +5,9 @@ struct DetailView: View {
     @State var playAll: Bool = false
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
+    let gradientIslamic = Gradient(colors: [Color.accentColor.opacity(0.7), Color.islamicGoldDark.opacity(0.7)])
 
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {

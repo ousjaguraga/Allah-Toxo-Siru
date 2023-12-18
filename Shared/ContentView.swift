@@ -7,7 +7,7 @@ import SwiftUI
 // MARK: - Main ContentView
 struct ContentView: View {
     @ObservedObject var nameVM = NameVM()
-    
+   
     var body: some View {
         
         ZStack {
@@ -26,11 +26,11 @@ struct ContentView: View {
 struct SwipeableView: View {
     @ObservedObject var nameVM = NameVM()
     var names: [NameModel.Name]
-    @State private var selectedTab = 0
+    @State var selectedTab: Int
     @State private var isAutoPlaying = false
-    @State var playAll = false
-    @State  var name: Int
-    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect() // Change 3 to desired interval
+    //@State var autoplayer = Player(id: 0)
+    
+    let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
 
     var body: some View {
         ZStack {
@@ -38,14 +38,17 @@ struct SwipeableView: View {
                 
                 TabView(selection: $selectedTab) {
                     if (isAutoPlaying){
+                        
                         ForEach(names.indices, id: \.self) { index in
-                         DetailView(name: names[index], playAll: playAll)
+                         DetailView(name: names[index], playAll: isAutoPlaying)
                                         .tag(index)
                         }
                     } else {
-                        
-                            DetailView(name: names[name-1], playAll: false)
-                                      
+                        // name: names[name+selectedTab-1]
+                        ForEach(names.indices, id: \.self) { index in
+                            DetailView(name: names[selectedTab], playAll: isAutoPlaying)
+                                .tag(index)
+                        }
                     }
                    
                 }
@@ -75,6 +78,9 @@ struct SwipeableView: View {
 }
 
 
+// BUG: - Bug with two names playing at once has to do with the id in the auto playing
+// When debugging, less coding is better, i have been able to see light after stepping away
+// SKIPS ID 1 and 2 . WHY?
 
 // MARK: - Drawing Constants
 struct DrawingConstants {

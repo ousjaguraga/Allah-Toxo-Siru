@@ -17,7 +17,7 @@ class Player: ObservableObject {
     // empty init
     init(){}
     
-    // play audio witg ID given
+    // play audio with ID given
     init(id: Int){
         
         if let url = Bundle.main.url(forResource: "\(id)", withExtension: "mp3"){
@@ -46,7 +46,7 @@ class Player: ObservableObject {
     
    func togglePlay(){
        if player.isPlaying {
-           pause()
+           stop()
        } else {
            play()
        }
