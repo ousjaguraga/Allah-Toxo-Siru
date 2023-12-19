@@ -7,7 +7,8 @@ struct PlayerView: View {
     @ObservedObject var player: Player
     @State var isPlaying: Bool = false
     // 0.01
-    @State var timer = Timer.publish(every: 0.1,  on: .main, in: .common).autoconnect()
+    @State var timer = Timer.publish(every: 0.01,  on: .main, in: .common).autoconnect()
+
     
     init(id myID: Int, playAll autoPlayStatus: Bool){
         self.id = myID
@@ -15,7 +16,8 @@ struct PlayerView: View {
         player = Player(id: id)
     }
    
-       
+  
+    
     var body: some View {
         VStack {
             Button(action: { player.togglePlay() }) {
@@ -26,11 +28,6 @@ struct PlayerView: View {
         }
         .onReceive(timer) { _ in
             isPlaying = player.player.isPlaying
-        }.onAppear {
-            if (playAll){
-                player.togglePlay()
-                
-            }
         }
     }
 }

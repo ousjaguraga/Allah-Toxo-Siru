@@ -12,12 +12,13 @@ import AVKit
 class Player: ObservableObject {
     @Published  var player = AVAudioPlayer()
     // var isPlaying: Bool = false
+    var ready: Bool = false
     
     
     // empty init
     init(){}
     
-    // play audio with ID given
+    // play audio witg ID given
     init(id: Int){
         
         if let url = Bundle.main.url(forResource: "\(id)", withExtension: "mp3"){
@@ -25,6 +26,7 @@ class Player: ObservableObject {
                 let data = try! Data(contentsOf: url)
                 player = try AVAudioPlayer(data: data)
                 player.prepareToPlay()
+                ready = true
                
             } catch {
                 print("Error")

@@ -3,6 +3,7 @@ import SwiftUI
 struct DetailView: View {
     var name: NameModel.Name
     @State var playAll: Bool = false
+    
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
     let gradientIslamic = Gradient(colors: [Color.accentColor.opacity(0.7), Color.islamicGoldDark.opacity(0.7)])
@@ -39,8 +40,8 @@ struct DetailView: View {
                         .font(.system(size: geometry.size.width * 0.2))
                         .foregroundColor(.white)
                         .shadow(radius: 5)
+                   PlayerView(id: name.id, playAll: playAll)
                     
-                    PlayerView(id: name.id, playAll: playAll)
                     
                     ForEach(name.name) { name in
                         Text(name)

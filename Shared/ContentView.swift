@@ -28,30 +28,36 @@ struct SwipeableView: View {
     var names: [NameModel.Name]
     @State var selectedTab: Int
     @State private var isAutoPlaying = false
-    //@State var autoplayer = Player(id: 0)
+    @State  var player = Player()
+    @State var isPlaying: Bool = false
+    @State var first = true
     
-    let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    let isPlayingTimer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
 
+
+    
+    
     var body: some View {
         ZStack {
             VStack {
                 
                 TabView(selection: $selectedTab) {
+                    
                     if (isAutoPlaying){
-                        
                         ForEach(names.indices, id: \.self) { index in
-                         DetailView(name: names[index], playAll: isAutoPlaying)
+                            DetailView(name: names[selectedTab > 0 ? selectedTab-1 : selectedTab], playAll: isAutoPlaying)
                                         .tag(index)
                         }
                     } else {
-                        // name: names[name+selectedTab-1]
                         ForEach(names.indices, id: \.self) { index in
-                            DetailView(name: names[selectedTab], playAll: isAutoPlaying)
-                                .tag(index)
+                         DetailView(name: names[selectedTab], playAll: isAutoPlaying)
+                                        .tag(index)
                         }
                     }
                    
                 }
+                
                 .background(Color.backgroundOne)
                 .edgesIgnoringSafeArea(.all)
                 .tabViewStyle(PageTabViewStyle())
@@ -60,11 +66,14 @@ struct SwipeableView: View {
             .edgesIgnoringSafeArea(.bottom)
             .background(Color.backgroundOne)
             
+            .onReceive(isPlayingTimer) { _ in
+                player = Player(id: selectedTab+1)
+            }
             .onReceive(timer) { _ in
-                if isAutoPlaying {
-                    withAnimation {
-                        selectedTab = (selectedTab + 1) % names.count
-                    }
+               
+                if (isAutoPlaying){
+                    player.togglePlay()
+                    selectedTab = (selectedTab + 1) % names.count
                 }
             }
             VStack(alignment: .leading){
