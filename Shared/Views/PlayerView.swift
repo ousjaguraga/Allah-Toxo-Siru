@@ -3,7 +3,7 @@ import SwiftUI
 // MARK: - PlayerView
 struct PlayerView: View {
     var id: Int
-    @State var playAll: Bool = false
+    @State var playAll: Bool = true
     @ObservedObject var player: Player
     @State var isPlaying: Bool = false
     // 0.01
@@ -27,7 +27,7 @@ struct PlayerView: View {
             }
         }
         .onReceive(timer) { _ in
-            isPlaying = player.player.isPlaying
+            isPlaying = player.player.isPlaying || playAll
         }
     }
 }

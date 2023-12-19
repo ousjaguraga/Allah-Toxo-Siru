@@ -32,8 +32,8 @@ struct SwipeableView: View {
     @State var isPlaying: Bool = false
     @State var first = true
     
-    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
-    let isPlayingTimer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    let isPlayingTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 
 
     
@@ -46,8 +46,8 @@ struct SwipeableView: View {
                     
                     if (isAutoPlaying){
                         ForEach(names.indices, id: \.self) { index in
-                            DetailView(name: names[selectedTab > 0 ? selectedTab-1 : selectedTab], playAll: isAutoPlaying)
-                                        .tag(index)
+                            DetailTab(name: names[selectedTab > 0 ? selectedTab-1 : selectedTab], playAll: isAutoPlaying)
+                                        .tag(index+1)
                         }
                     } else {
                         ForEach(names.indices, id: \.self) { index in
@@ -57,11 +57,14 @@ struct SwipeableView: View {
                     }
                    
                 }
-                
                 .background(Color.backgroundOne)
                 .edgesIgnoringSafeArea(.all)
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            }
+            .onDisappear {
+                isAutoPlaying = false
+                player.stop()
             }
             .edgesIgnoringSafeArea(.bottom)
             .background(Color.backgroundOne)
@@ -73,6 +76,7 @@ struct SwipeableView: View {
                
                 if (isAutoPlaying){
                     player.togglePlay()
+                    
                     selectedTab = (selectedTab + 1) % names.count
                 }
             }
