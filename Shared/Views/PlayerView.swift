@@ -3,16 +3,14 @@ import SwiftUI
 // MARK: - PlayerView
 struct PlayerView: View {
     var id: Int
-    @State var playAll: Bool = true
     @ObservedObject var player: Player
     @State var isPlaying: Bool = false
     // 0.01
     @State var timer = Timer.publish(every: 0.01,  on: .main, in: .common).autoconnect()
 
     
-    init(id myID: Int, playAll autoPlayStatus: Bool){
+    init(id myID: Int){
         self.id = myID
-        self.playAll = autoPlayStatus
         player = Player(id: id)
     }
    
@@ -21,13 +19,13 @@ struct PlayerView: View {
     var body: some View {
         VStack {
             Button(action: { player.togglePlay() }) {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                Image(systemName: isPlaying ? "stop.fill" : "play.fill")
                     .font(.title)
                     .foregroundColor(.white)
             }
         }
         .onReceive(timer) { _ in
-            isPlaying = player.player.isPlaying || playAll
+            isPlaying = player.isPlaying
         }
     }
 }

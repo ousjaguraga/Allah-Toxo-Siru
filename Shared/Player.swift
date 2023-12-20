@@ -13,8 +13,7 @@ class Player: ObservableObject {
     @Published  var player = AVAudioPlayer()
     // var isPlaying: Bool = false
     var ready: Bool = false
-    
-    
+    var isPlaying: Bool { player.isPlaying }
     // empty init
     init(){}
     
@@ -42,10 +41,11 @@ class Player: ObservableObject {
     func pause(){
         player.pause()
     }
+    
     func stop(){
         player.stop()
     }
-    
+
    func togglePlay(){
        if player.isPlaying {
            stop()

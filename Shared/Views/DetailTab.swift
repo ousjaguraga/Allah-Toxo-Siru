@@ -3,10 +3,13 @@ import SwiftUI
 struct DetailTab: View {
     var name: NameModel.Name
     @State var playAll: Bool = false
-    
+    @State private var phase = 0.0
+    @State private var amplitude: CGFloat = 50 // Start with a base amplitude
+
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
     let gradientIslamic = Gradient(colors: [Color.accentColor.opacity(0.7), Color.islamicGoldDark.opacity(0.7)])
+    let timer = Timer.publish(every: 0.02, on: .main, in: .common).autoconnect()
 
     
     var body: some View {
@@ -49,6 +52,7 @@ struct DetailTab: View {
                             .background(Color.white.opacity(0.7))
                             .padding(.vertical, 5)
                     }
+                    
                 }
                 //.padding(20)
             }

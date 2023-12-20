@@ -228,6 +228,7 @@
 		D8CAD0E127B6D1B700D8673C /* 80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD07927B6D1B700D8673C /* 80.mp3 */; };
 		D8CAD0E327B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
 		D8CAD0E427B6D6BC00D8673C /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CAD0E227B6D6BC00D8673C /* 36.mp3 */; };
+		D8F00B642B339DEB00369265 /* WaveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00B632B339DEB00369265 /* WaveAnimation.swift */; };
 		D8F5B37C2AE81547009B3600 /* Jim.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5B37B2AE81547009B3600 /* Jim.swift */; };
 /* End PBXBuildFile section */
 
@@ -349,6 +350,7 @@
 		D8CAD07827B6D1B700D8673C /* 86.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 86.mp3; sourceTree = "<group>"; };
 		D8CAD07927B6D1B700D8673C /* 80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80.mp3; sourceTree = "<group>"; };
 		D8CAD0E227B6D6BC00D8673C /* 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36.mp3; sourceTree = "<group>"; };
+		D8F00B632B339DEB00369265 /* WaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimation.swift; sourceTree = "<group>"; };
 		D8F5B37B2AE81547009B3600 /* Jim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -381,6 +383,7 @@
 				D80C340C2B2B7E4400D562A2 /* PlayerView.swift */,
 				D80C340E2B2B7EF600D562A2 /* SplashView.swift */,
 				D8BAE5202B31DB4600943CC0 /* DetailTab.swift */,
+				D8F00B632B339DEB00369265 /* WaveAnimation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -839,6 +842,7 @@
 				D853D63D2AE6D6C8001FFAFC /* Michael.swift in Sources */,
 				D8F5B37C2AE81547009B3600 /* Jim.swift in Sources */,
 				D80C340B2B2B7E1E00D562A2 /* DetailView.swift in Sources */,
+				D8F00B642B339DEB00369265 /* WaveAnimation.swift in Sources */,
 				D87D3B9827A6069B00588EB1 /* Star.swift in Sources */,
 				D80C340F2B2B7EF600D562A2 /* SplashView.swift in Sources */,
 				D87D8D8327AC809B00D30341 /* Player.swift in Sources */,
