@@ -1,0 +1,619 @@
+{
+    "names": [{
+            "id": 1,
+            "name": ["Batitunka"],
+            "arabic": "‎اللَّهُ",
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "touched": false
+        },
+        
+      
+        {
+            "id": 2,
+            "name": ["Tunkabajjo"],
+            "arabic": "اَلاَحَدُ",
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "touched": false
+        },
+        {
+            "id": 3,
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "name": ["Kanllanke"],
+            "arabic": "الأعْلَى",
+            "touched": false
+        },
+        {
+            "id": 4,
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "name": ["Tunka Dare"],
+            "arabic": "الْأَكْرَمُ",
+            "touched": false
+        },
+        {
+            "id": 5,
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "name": ["Batiikamane"],
+            "arabic": "الْإِلَهُ",
+            "touched": false
+        },
+        {
+            "id": 6,
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "name": ["Fana", "Jopanbali"],
+            "arabic": "الأوَّلُ",
+            "touched": false
+        },
+        {
+            "id": 7,
+            "name": ["Lagari", "Ñamanbali"],
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "arabic": "الآخِرُ",
+            "touched": false
+        },
+        {
+            "id": 8,
+            "name": ["Maxankutu muxunton Tunka"],
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "arabic": "الْبَاطِنُ",
+            "touched": false
+        },
+        {
+            "id": 9,
+            "name": ["Tagandun Sironda"],
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "arabic": "الْبَارِئُ",
+            "touched": false
+        },
+        {
+            "id": 10,
+            "name": ["Fisiri Dabaraana"],
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "arabic": "الْبَرُّ",
+            "touched": false
+        },
+
+        {
+            "id": 11,
+            "name": ["Wallaana Xoore"],
+            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "arabic": "الْبَصِيرُ",
+            "touched": false
+        },
+        {
+            "id": 12,
+            "name": ["Fo su Boyidaana"],
+            "arabic": "الْبَاسِطُ",
+            "touched": false
+        },
+        {
+            "id": 13,
+            "name": ["Tuuburagaana"],
+            "arabic": "التَّوَّابُ",
+            "touched": false
+        },
+        {
+            "id": 14,
+            "name": ["Kuyu gaba kuyaana"],
+            "arabic": "الْجَوَادُ",
+            "touched": false
+        },
+        {
+            "id": 15,
+            "name": ["Tunka faranfare"],
+            "arabic": "الْجَمِيلُ",
+            "touched": false
+        },
+        {
+            "id": 16,
+            "name": ["Komon Nequndaana"],
+            "arabic": "الْجَبَّارُ",
+            "touched": false
+        },
+        {
+            "id": 17,
+            "name": ["Tunka Tangandaana"],
+            "arabic": "الْحَافِظُ",
+            "touched": false
+        },
+        {
+            "id": 18,
+            "name": ["Wasayen Tunka"],
+            "arabic": "اﻟْﺣَسِيبُ",
+            "touched": false
+        },
+        {
+            "id": 19,
+            "name": ["Tagandaana Xoore"],
+            "arabic": "الْحَفِيظُ",
+            "touched": false
+        },
+        {
+            "id": 20,
+            "name": ["Sorogondaana Sire"],
+            "arabic": "الحَفِيُّ",
+            "touched": false
+        },
+        {
+            "id": 21,
+            "name": ["Toŋun Tunka"],
+            "arabic": "الْحَقُّ",
+            "touched": false
+        },
+        {
+            "id": 22,
+            "name": ["Kiiti sirun Karandaana"],
+            "arabic": "الْحَكِيمُ",
+            "touched": false
+        },
+        {
+            "id": 23,
+            "name": ["Abada Birante"],
+            "arabic": "الْحَيُّ",
+            "touched": false
+        },
+        {
+            "id": 24,
+            "name": ["Fi su rooroxen Tuwaana", "Tunka Nooxe"],
+            "arabic": "الْحَلِيمُ",
+            "touched": false
+        },
+
+        {
+            "id": 25,
+            "name": ["Tiigeetunka"],
+            "arabic": "الْحَمِيدُ",
+            "touched": false
+        },
+        {
+            "id": 26,
+            "name": ["Fiiŋaarañantoxaana", "Yaagana"],
+            "arabic": "الْحَيُّ",
+            "touched": false
+        },
+
+        {
+            "id": 27,
+            "name": ["Naxankiita", "Fatamanda"],
+            "arabic": "الْحَكَمُ",
+            "touched": false
+        },
+
+        {
+            "id": 28,
+            "name": ["Yingaana", "Fintuwaana"],
+            "arabic": "الْخَبِيرُ",
+            "touched": false
+        },
+        {
+            "id": 29,
+            "name": ["Tagandaana"],
+            "arabic": "الْخَالِقُ",
+            "touched": false
+        },
+        {
+            "id": 30,
+            "name": ["Taganda Xoore"],
+            "arabic": "الْخَلَّاقُ",
+            "touched": false
+        },
+        {
+            "id": 31,
+            "name": ["Mullinwutundaana", "Hinnaana"],
+            "arabic": "الرَّفِيقُ",
+            "touched": false
+        },
+        {
+            "id": 32,
+            "name": ["Yurumanadaana"],
+            "arabic": "الرَّؤُوفُ",
+            "touched": false
+        },
+
+
+        {
+            "id": 33,
+            "name": ["Kiteyun Neemanda"],
+            "arabic": "الرَّحْمَنُ",
+            "touched": false
+        },
+        {
+            "id": 34,
+            "name": ["Komo sirun Rahinnaana"],
+            "arabic": "الرَّحِيمُ",
+            "touched": false
+        },
+        {
+            "id": 35,
+            "name": ["Arajaxandaana"],
+            "arabic": "الرَّزَّاقُ",
+            "touched": false
+        },
+
+        {
+            "id": 36,
+            "name": ["Korosindaana"],
+            "arabic": "الرَّقِيبُ",
+            "touched": false
+        },
+
+        {
+            "id": 37,
+            "name": ["Kamane"],
+            "arabic": "الرَّبُّ",
+            "touched": false
+        },
+        {
+            "id": 38,
+            "name": ["Naxasiyunkisiitunka", "Jamuduuron Tunka"],
+            "arabic": "السَّلاَمُ",
+            "touched": false
+        },
+        {
+            "id": 39,
+            "name": ["Mukkaana"],
+            "arabic": "السَّمِيعُ",
+            "touched": false
+        },
+        {
+            "id": 40,
+            "name": ["Sennaaxunun Koŋiitunka"],
+            "arabic": "السُّبُّوحُ",
+            "touched": false
+        },
+        {
+            "id": 41,
+            "name": ["Maraana", "Kamane"],
+            "arabic": "السَّيِّدُ",
+            "touched": false
+        },
+        {
+            "id": 42,
+            "name": ["Kuufandaana"],
+            "arabic": "الشَّاكِرُ",
+
+            "touched": false
+        },
+        {
+            "id": 43,
+            "name": ["Kuufanda Sire", "Golli siri Tugandana"],
+            "arabic": "الشَّكُورُ",
+
+            "touched": false
+        },
+        {
+            "id": 44,
+            "name": ["Seedaana", "Fiinun Hadaraana"],
+            "arabic": "الشَّهِيدُ",
+
+            "touched": false
+        },
+
+        {
+            "id": 45,
+            "name": ["Sellandaana", "Jaarandaana"],
+            "arabic": "الشَّافِي",
+
+            "touched": false
+        },
+        {
+            "id": 46,
+            "name": ["Tunka Haaju Siraana", "Duransikkaana"],
+            "arabic": "الصَّمَدُ",
+            "touched": false
+        },
+        {
+            "id": 47,
+            "name": ["Tunka Senne"],
+            "arabic": "الطَّيِّبُ",
+            "touched": false
+        },
+        {
+            "id": 48,
+            "name": ["Maxankutobanganton Tunka"],
+            "arabic": "الظَّاهِرُ",
+            "touched": false
+        },
+        {
+            "id": 49,
+            "name": ["Tuwaana"],
+            "arabic": "اَلْعَلِيْمُ",
+            "touched": false
+        },
+        {
+            "id": 50,
+            "name": ["Tunka Niyaana", "Tunka Senbente", "Seyegume"],
+            "arabic": "الْعَزِيزُ",
+            "touched": false
+        },
+        {
+            "id": 51,
+            "name": ["Tunka Dare"],
+            "arabic": "الْعَظِيمُ",
+            "touched": false
+        },
+        {
+            "id": 52,
+            "name": ["Fiiburu Buruxanda", "Yanpaana Fiburudangaana"],
+            "arabic": "الْعَفْوُ",
+            "touched": false
+        },
+        {
+            "id": 53,
+            "name": ["Tuwaana Xoore"],
+            "arabic": "الْعَلِيمُ",
+            "touched": false
+        },
+        {
+            "id": 54,
+            "name": ["Kallanke"],
+            "arabic": "الْعَلِيُّ",
+            "touched": false
+        }, {
+            "id": 55,
+            "name": ["Fi gaben Xafaraana"],
+            "arabic": "الْغَفَّارُ",
+            "touched": false
+        }, {
+            "id": 56,
+            "name": ["Xafariyen Tunka"],
+            "arabic": "الْغَفُورُ",
+            "touched": false
+        }, {
+            "id": 57,
+            "name": ["Banna", "Fo gaben Maraana"],
+            "arabic": "الْغَنِيُّ",
+            "touched": false
+        }, {
+            "id": 58,
+            "name": ["Wuñindaana", "Bagumanda", "Fatamanda"],
+            "arabic": "الْفَتَّاحُ",
+            "touched": false
+        }, {
+            "id": 59,
+            "name": ["Fiinun Raniyaana", "Katudanŋaana"],
+            "arabic": "الْقَادِرُ",
+            "touched": false
+        }, {
+            "id": 60,
+            "name": ["Niiyindaana", "Hakkamaana"],
+            "arabic": "الْقَاهِرُ",
+            "touched": false
+        }, {
+            "id": 61,
+            "name": ["Gunundaana", "Ragandaana", "Tigitaana"],
+            "arabic": "الْقَابِضُ",
+            "touched": false
+        }, {
+            "id": 62,
+            "name": ["Senoyen Maxankuti Tunka"],
+            "arabic": "الْقُدُّوسُ",
+            "touched": false
+        }, {
+            "id": 63,
+            "name": ["Fi su Katudanŋaana"],
+            "arabic": "الْقَدِيرُ",
+            "touched": false
+        }, {
+            "id": 64,
+            "name": ["Tunka Tinte"],
+            "arabic": "الْقَرِيبُ",
+            "touched": false
+        }, {
+            "id": 65,
+            "name": ["Senbente"],
+            "arabic": "الْقَوِيُّ",
+            "touched": false
+        }, {
+            "id": 66,
+            "name": ["Fiinnun su Hakkamaana"],
+            "arabic": "الْقَهَّارُ",
+            "touched": false
+        }, {
+            "id": 67,
+            "name": ["Fiinun  Sikkaana"],
+            "arabic": "الْقَيُّومُ",
+            "touched": false
+        },
+        {
+            "id": 68,
+            "name": ["Tunka Xoore"],
+            "arabic": "الْكَبِيرُ",
+            "touched": false
+        }, {
+            "id": 69,
+            "name": ["Xooronditunka", "Dronditunka"],
+            "arabic": "الْكَرِيمُ",
+            "touched": false
+        }, {
+            "id": 70,
+            "name": ["Mullin Goliñaŋaana", "Mullinsorogondaana", "Moxomoxonte"],
+            "arabic": "اللَّطِيفُ",
+            "touched": false
+        }, {
+            "id": 71,
+            "name": ["Gamundaana", "Sirondaana"],
+            "arabic": "الْمُحْسِنُ",
+            "touched": false
+        }, {
+            "id": 72,
+            "name": ["Komon Duntaŋaaxunda", "Kiilu Taaxundaana"],
+            "arabic": "الْمُؤْمِنُ",
+            "touched": false
+        }, {
+            "id": 73,
+            "name": ["Tunka Duwuruginda", "Dufufasaana"],
+            "arabic": "الْمُتَعَالُ",
+            "touched": false
+        }, {
+            "id": 74,
+            "name": ["Dufoŋoyen Tunka"],
+            "arabic": "الْمُتَكَبِّرُ",
+            "touched": false
+        }
+
+        , {
+            "id": 75,
+            "name": ["Kendoyen Tunka", "Xotoyen Tunka"],
+            "arabic": "الْمَتِينُ",
+            "touched": false
+        },
+
+        {
+            "id": 76,
+            "name": ["Tunka Ñumaana"],
+            "arabic": "الْمُجِيبُ",
+            "touched": false
+        },
+
+        {
+            "id": 77,
+            "name": ["Dronditunka"],
+            "arabic": "الْمَجِيدُ",
+            "touched": false
+        },
+        {
+            "id": 78,
+            "name": ["Tunka Goorinkataana"],
+            "arabic": "الْمُحِيطُ",
+
+            "touched": false
+        },
+        {
+            "id": 79,
+            "name": ["Giya Kininda", "Fo su suura Karanda"],
+            "arabic": "الْمُصَوِّرُ",
+            "touched": false
+        },
+        {
+            "id": 80,
+            "name": ["Katudanŋaana Xote"],
+            "arabic": "الْمُقْتَدِرُ",
+            "touched": false
+        },
+        {
+            "id": 81,
+            "name": ["Biraadokinna"],
+            "arabic": "الْمُقِيتُ",
+            "touched": false
+        },
+        {
+            "id": 82,
+            "name": ["Tunka Maraana"],
+            "arabic": "الْمَلِكُ",
+            "touched": false
+        },
+        {
+            "id": 83,
+            "name": ["Mareetunka"],
+            "arabic": "الْمَلِيكُ",
+            "touched": false
+        },
+        {
+            "id": 84,
+            "name": ["Komon Biisitunka"],
+            "arabic": "المَولَى",
+            "touched": false
+        },
+        {
+            "id": 85,
+            "name": ["Fon su kanma Kiitaana", "Komon su Hakkaminda"],
+            "arabic": "الْمُهَيْمِنُ",
+            "touched": false
+        },
+        {
+            "id": 86,
+            "name": ["Fon su Kininda", "Kuyaana Xoore"],
+            "arabic": "المُعْطِي",
+            "touched": false
+        },
+        {
+            "id": 87,
+            "name": ["Kaane sigindaana", "Kaane kandaana"],
+            "arabic": "الْمُقَدِّمُ",
+            "touched": false
+        },
+        {
+            "id": 88,
+            "name": ["Falle sigindaana", "Halle toxindaana"],
+            "arabic": "الْمُؤَخِّرُ",
+            "touched": false
+        },
+        {
+            "id": 89,
+            "name": ["Neema xooro Kinaana", "Neema Kuyaana"],
+            "arabic": "الْمَنَّانُ",
+            "touched": false
+        },
+        {
+            "id": 90,
+            "name": ["Toŋu Bangandaana"],
+            "arabic": "الْمُبِينُ",
+            "touched": false
+        },
+        {
+            "id": 91,
+            "name": ["Deemanda Xoore"],
+            "arabic": "النَّصِيرُ",
+            "touched": false
+        },
+        {
+            "id": 92,
+            "name": ["Baane Kolooti"],
+            "arabic": "الْوَاحِدُ",
+            "touched": false
+        },
+        {
+            "id": 93,
+            "name": ["Fon su Falle Xeyaana"],
+            "arabic": "الْوَارِثُ",
+            "touched": false
+        },
+        {
+            "id": 94,
+            "name": ["Tunkaaxu yuruwante Dunke"],
+            "arabic": "الْوَاسِعُ",
+            "touched": false
+        },
+        {
+            "id": 95,
+            "name": ["Komon Xana Xanundaana"],
+            "arabic": "الْوَدُودُ",
+            "touched": false
+        },
+
+        {
+            "id": 96,
+            "name": ["Komon Tuugura", "Komen Senbeera"],
+            "arabic": "الْوَكِيلُ",
+            "touched": false
+        },
+        {
+            "id": 97,
+            "name": ["Fiinun Biisaana", "Komo sirun Kaaranlenma"],
+            "arabic": "الْوَلِيُّ",
+            "touched": false
+        },
+
+
+        {
+            "id": 98,
+            "name": ["Kuyaana Xoore"],
+            "arabic": "الْوَهَّابُ",
+            "touched": false
+        },
+        {
+            "id": 99,
+            "name": ["Joonigankaaxu Tunka"],
+            "arabic": "الْوِتْرُ",
+            "touched": false
+        }
+
+
+
+
+
+
+    ]
+}
+
+Listen very carefully and please do this correctly.https://learn-islam.org/allah-names this link has quranic verse for every name of Allah. please compute the json by adding the arabic Quran text and verse number

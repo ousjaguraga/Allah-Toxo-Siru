@@ -2,7 +2,6 @@ import SwiftUI
 
 // MARK: - ListView
 struct MichaelList: View {
-    var names: [NameModel.Name]
     @ObservedObject var nameVM: NameVM
 
     var gradient: LinearGradient {
@@ -15,8 +14,8 @@ struct MichaelList: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columnLayout){
-                    ForEach(names) { n in
-                        NavigationLink(destination:SwipeableView(names: nameVM.names, selectedTab: n.id-1)) {
+                ForEach(nameVM.names) { n in
+                        NavigationLink(destination:SwipeableView(nameVM: nameVM, selectedTab: n.id)) {
                             HStack {
                                 VStack {
                                     ZStack {

@@ -14,7 +14,7 @@ struct ContentView: View {
             VStack {
                 Text("ALLA TOXO SIRU").foregroundColor(.accentColor).padding(50).font(.largeTitle)
                 NavigationView {
-                        MichaelList(names: nameVM.names, nameVM: nameVM)
+                        MichaelList(nameVM: nameVM)
                 }
             }
         }
@@ -24,16 +24,14 @@ struct ContentView: View {
 
 
 struct SwipeableView: View {
-    @ObservedObject var nameVM = NameVM()
-    var names: [NameModel.Name]
+    @ObservedObject var nameVM: NameVM
     @State var selectedTab: Int
     @State private var isAutoPlaying = false
     @State  var player = Player()
-    @State var first = true
     
     let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
-    let isPlayingTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-
+    let isPlayingTimer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    @State var first: Bool = true
 
     
     
@@ -48,19 +46,28 @@ struct SwipeableView: View {
                .background(Color.backgroundOne)
             
                .onReceive(isPlayingTimer) { _ in
-                   player = Player(id: selectedTab+1)
                 
                }
                .onReceive(timer) { _ in
+                   player = Player(id: selectedTab+1)
+                   
                    if (isAutoPlaying){
-                       player.togglePlay()
-                       selectedTab = (selectedTab + 1) % names.count
-                       
+                       if (first){
+                           player = Player(id: selectedTab)
+                           player.togglePlay()
+                           print(selectedTab)
+                           first = false
+                       } else {
+                           selectedTab = (selectedTab + 1) % nameVM.names.count
+                           player.togglePlay()
+                          
+                       }
                    }
+                  
                }
-            VStack(alignment: .leading){
-                Button(isAutoPlaying ? "Stop" : "Play All") {
+                VStack(alignment: .leading){                  Button(isAutoPlaying ? "Stop" : "Play All") {
                     isAutoPlaying.toggle()
+                    first = true
                 }
                 
                 Spacer()
@@ -71,15 +78,18 @@ struct SwipeableView: View {
     
     var SlideView : some View {
         return TabView(selection: $selectedTab) {
-            ForEach(names.indices, id: \.self) { index in
-                
-                if isAutoPlaying {
-                    DetailTab(name:  names[selectedTab > 0 ? selectedTab-1 : selectedTab])
-                        .tag(index+1)
-                } else {
-                    DetailView(name: names[selectedTab])
-                        .tag(index)
-                }
+            ForEach(nameVM.names) { name in
+                DetailView(name: name)
+                    .tag(name.id)
+                        .onTapGesture(count: 2, perform: {
+                            nameVM.touched(name.id)
+                            print(name)
+                        }).onDisappear {
+                            if name.touched {
+                            nameVM.touched(name.id)
+                            }
+                           
+                        }
            }
         }
         .background(Color.backgroundOne)

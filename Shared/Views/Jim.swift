@@ -16,7 +16,7 @@ struct JimList: View {
         ScrollView {
             LazyVGrid(columns: columnLayout){
                     ForEach(names) { n in
-                        NavigationLink(destination:SwipeableView(names: nameVM.names, selectedTab: n.id - 1)) {
+                        NavigationLink(destination:SwipeableView(nameVM: nameVM, selectedTab: n.id - 1)) {
                             HStack {
                                 VStack {
                                     ZStack {

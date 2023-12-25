@@ -6,7 +6,7 @@ struct DetailView: View {
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
     let gradientIslamic = Gradient(colors: [Color.accentColor.opacity(0.7), Color.islamicGoldDark.opacity(0.7)])
-
+    
     
     var body: some View {
         GeometryReader { geometry in
@@ -18,6 +18,64 @@ struct DetailView: View {
                 
                 shape.strokeBorder(Color.green.opacity(0.7), lineWidth: 3)
                     .shadow(radius: 10)
+                
+                
+                
+                VStack(spacing: 20) {
+                    
+                    VStack {
+                        Text(name.quran[0])
+                            .font(.title) // Large, elegant font for the verse
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        
+                        Text(name.quran[1])
+                            .font(.caption) // Smaller font for the translation or commentary
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
+                    .cornerRadius(10) // Rounded corners for the VStack
+                    .padding() // Padding around the VStack
+                    
+                    
+                    
+                    Text(name.arabic)
+                        .font(.system(size: geometry.size.width * 0.2))
+                        .foregroundColor(.white)
+                        .shadow(radius: 5)
+                    
+                    
+                    
+                    ForEach(name.name) { name in
+                        Text(name)
+                            .font(.system(size: geometry.size.width * 0.08))
+                            .foregroundColor(.white)
+                        Divider()
+                            .background(Color.white.opacity(0.7))
+                            .padding(.vertical, 5)
+                    }
+                    
+                    
+                    // Soninke Translation
+                    VStack {
+                        Text("Surely I am Allah, there is no god but I; therefore, worship Me and keep up prayer for My remembrance.")
+                            .font(.title3) // Large, elegant font for the verse
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        
+                        Text(name.quran[1])
+                            .font(.caption) // Smaller font for the translation or commentary
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
+                    .cornerRadius(10) // Rounded corners for the VStack
+                    .padding() // Padding around the VStack
+                    
+                    
+                    
+                }.opacity(name.touched ? 1 : 0)
                 
                 VStack(spacing: 20) {
                     ZStack {
@@ -40,7 +98,7 @@ struct DetailView: View {
                         .foregroundColor(.white)
                         .shadow(radius: 5)
                     
-                   PlayerView(id: name.id)
+                    PlayerView(id: name.id)
                     
                     
                     ForEach(name.name) { name in
@@ -51,8 +109,11 @@ struct DetailView: View {
                             .background(Color.white.opacity(0.7))
                             .padding(.vertical, 5)
                     }
-                }
+                }.opacity(name.touched ? 0 : 1)
+                
                 //.padding(20)
+                
+                
             }
             .padding(20).padding(.vertical, 50)
             .cornerRadius(25)

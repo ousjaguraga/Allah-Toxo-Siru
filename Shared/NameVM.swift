@@ -29,7 +29,7 @@ class NameVM: ObservableObject {
     
     // Intents
     func touched(_ id: Int){
-        model.touched(id)
+        model.toggle_touched(id)
     }
     
     

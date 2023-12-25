@@ -31,6 +31,8 @@
 		D894D7BB27A44CED007C0E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D7A927A44CEA007C0E6E /* ContentView.swift */; };
 		D894D7BC27A44CED007C0E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D894D7AA27A44CEC007C0E6E /* Assets.xcassets */; };
 		D894D7BD27A44CED007C0E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D894D7AA27A44CEC007C0E6E /* Assets.xcassets */; };
+		D8A0B10F2B3901BB00FA969D /* names copy.json in Resources */ = {isa = PBXBuildFile; fileRef = D8A0B10E2B3901BB00FA969D /* names copy.json */; };
+		D8A0B1102B3901BB00FA969D /* names copy.json in Resources */ = {isa = PBXBuildFile; fileRef = D8A0B10E2B3901BB00FA969D /* names copy.json */; };
 		D8BAE5212B31DB4600943CC0 /* DetailTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAE5202B31DB4600943CC0 /* DetailTab.swift */; };
 		D8CACFD127B6D17000D8673C /* 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CACFBF27B6D16F00D8673C /* 18.mp3 */; };
 		D8CACFD227B6D17000D8673C /* 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8CACFBF27B6D16F00D8673C /* 18.mp3 */; };
@@ -251,6 +253,7 @@
 		D894D7AF27A44CEC007C0E6E /* Allah Toxo Siru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allah Toxo Siru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D894D7B527A44CED007C0E6E /* Allah Toxo Siru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allah Toxo Siru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D894D7B727A44CED007C0E6E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D8A0B10E2B3901BB00FA969D /* names copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "names copy.json"; sourceTree = "<group>"; };
 		D8BAE5202B31DB4600943CC0 /* DetailTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTab.swift; sourceTree = "<group>"; };
 		D8CACFBF27B6D16F00D8673C /* 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 18.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/18.mp3"; sourceTree = "<group>"; };
 		D8CACFC027B6D16F00D8673C /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 4.mp3; path = "../../../../Allah toxo Audio/2020-02-audios/4.mp3"; sourceTree = "<group>"; };
@@ -510,6 +513,7 @@
 				D84A9C3727A4699F00C92F2A /* NameModel.swift */,
 				D84A9C3A27A46ABD00C92F2A /* NameVM.swift */,
 				D87D8D8227AC809B00D30341 /* Player.swift */,
+				D8A0B10E2B3901BB00FA969D /* names copy.json */,
 				D84A9C3427A460A600C92F2A /* names.json */,
 				D87D8D9427ACB6D400D30341 /* audio */,
 				D894D7A927A44CEA007C0E6E /* ContentView.swift */,
@@ -616,6 +620,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A0B10F2B3901BB00FA969D /* names copy.json in Resources */,
 				D8CAD09A27B6D1B700D8673C /* 84.mp3 in Resources */,
 				D8CAD08027B6D1B700D8673C /* 57.mp3 in Resources */,
 				D8CAD04227B6D18B00D8673C /* 37.mp3 in Resources */,
@@ -724,6 +729,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A0B1102B3901BB00FA969D /* names copy.json in Resources */,
 				D8CAD09B27B6D1B700D8673C /* 84.mp3 in Resources */,
 				D8CAD08127B6D1B700D8673C /* 57.mp3 in Resources */,
 				D8CAD04327B6D18B00D8673C /* 37.mp3 in Resources */,

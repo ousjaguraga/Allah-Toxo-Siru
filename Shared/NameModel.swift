@@ -16,6 +16,7 @@ struct NameModel:  Codable {
         var name: [String]
         var arabic: String
         var touched: Bool
+        var quran: [String]
     }
     
     init (){}
@@ -29,19 +30,22 @@ struct NameModel:  Codable {
     }
     
    
-    mutating func touched(_ id: Int){
+    mutating func toggle_touched(_ id: Int){
         
+       
         // make all the other cards touched to be false
-        for index in names.indices {
-            names[index].touched = false
-        }
+        //for index in names.indices {
+        //    names[index].touched = false
+        //}
         
         // get the Name that was touched
         if let chosenIndex = names.firstIndex(where: {$0.id == id}){
             var chosenName = names[chosenIndex]
-            chosenName.touched = true
-            names[id - 1] = chosenName
+            chosenName.touched = !chosenName.touched
+            
+            names[chosenIndex] = chosenName
         }
+        
     }
     
     func getNameWith(id theID: Int) -> String {
