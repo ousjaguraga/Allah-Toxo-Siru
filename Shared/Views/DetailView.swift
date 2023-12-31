@@ -24,12 +24,12 @@ struct DetailView: View {
                 VStack(spacing: 20) {
                     
                     VStack {
-                        Text(name.quran[0])
+                        Text(name.quran)
                             .font(.title) // Large, elegant font for the verse
                             .multilineTextAlignment(.center)
                             .padding()
                         
-                        Text(name.quran[1])
+                        Text(name.translation[0])
                             .font(.caption) // Smaller font for the translation or commentary
                             .multilineTextAlignment(.center)
                             .padding()
@@ -59,12 +59,12 @@ struct DetailView: View {
                     
                     // Soninke Translation
                     VStack {
-                        Text("Surely I am Allah, there is no god but I; therefore, worship Me and keep up prayer for My remembrance.")
+                        Text(name.translation[1])
                             .font(.title3) // Large, elegant font for the verse
                             .multilineTextAlignment(.center)
                             .padding()
                         
-                        Text(name.quran[1])
+                        Text(name.translation[0])
                             .font(.caption) // Smaller font for the translation or commentary
                             .multilineTextAlignment(.center)
                             .padding()

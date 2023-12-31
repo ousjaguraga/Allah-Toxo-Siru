@@ -16,7 +16,8 @@ struct NameModel:  Codable {
         var name: [String]
         var arabic: String
         var touched: Bool
-        var quran: [String]
+        var quran: String
+        var translation: [String]
     }
     
     init (){}

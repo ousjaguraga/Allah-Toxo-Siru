@@ -3,42 +3,48 @@
             "id": 1,
             "name": ["Batitunka"],
             "arabic": "‎اللَّهُ",
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": " إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي",
+            "translation":
+            ["20:14", "Nke kundu, N ya ni Alla ya, batitunka su nta a du In ga fe. N batu, an na sallen sigindi In finkonŋen dan  ŋa"],
             "touched": false
         },
         
-      
         {
             "id": 2,
             "name": ["Tunkabajjo"],
             "arabic": "اَلاَحَدُ",
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+            "translation":["112:1", "An na ti: Aken ya ni Alla ya, Bajjon ga ni"],
             "touched": false
         },
         {
             "id": 3,
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
             "name": ["Kanllanke"],
             "arabic": "الأعْلَى",
+            "quran": " سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَ",
+            "translation": ["87:1", "An kaman Kallanke ke Toxon sennaxun ko"],
             "touched": false
         },
         {
             "id": 4,
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ",
+            "translation": ["96:3", "Xara, an kaman ya ni Tunkan ŋa, A gan dara"],
             "name": ["Tunka Dare"],
             "arabic": "الْأَكْرَمُ",
             "touched": false
         },
         {
             "id": 5,
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": " إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي",
+            "translation": ["96:3", "..."],
             "name": ["Batiikamane"],
             "arabic": "الْإِلَهُ",
             "touched": false
         },
         {
             "id": 6,
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "هُوَ الْأَوَّلُ وَالْآخِرُوَ",
+            "translation": ["57:3", "A ya ni Fanan do Lagaren  ŋa; ..."],
             "name": ["Fana", "Jopanbali"],
             "arabic": "الأوَّلُ",
             "touched": false
@@ -46,40 +52,744 @@
         {
             "id": 7,
             "name": ["Lagari", "Ñamanbali"],
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+            "translation": ["57:3", "A ya ni Fanan do Lagaren ŋa...."],
             "arabic": "الآخِرُ",
             "touched": false
         },
         {
             "id": 8,
             "name": ["Maxankutu muxunton Tunka"],
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ",
+            "translation": ["57:3", "... a do Tunka muxunten ŋa."],
             "arabic": "الْبَاطِنُ",
             "touched": false
         },
         {
             "id": 9,
             "name": ["Tagandun Sironda"],
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": "N/a",
+            "translation": ["52:28", "..."],
             "arabic": "الْبَارِئُ",
             "touched": false
         },
         {
             "id": 10,
             "name": ["Fisiri Dabaraana"],
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
+            "quran": " إِنَّا كُنَّا مِنْ قَبْلُ نَدْعُوهُ ۖ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ",
+            "translation": ["52:28", "O ñi ke kaane ya xa, o ga Allah xilli, Aken ya ni Fiisiriñaŋaanan ŋa, komo sirun Hinnaana ga ni"],
             "arabic": "الْبَرُّ",
             "touched": false
         },
 
         {
             "id": 11,
-            "name": ["Wallaana Xoore"],
-            "quran": [" إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي", "Taa Haa 20:14"],
             "arabic": "الْبَصِيرُ",
+            "name": ["Wallaana Xoore"],
+            "quran": " إِنَّهُ بِعِبَادِهِ خَبِيرٌ بَصِيرٌ",
+            "translation": ["42:27", "... fo wo fo su Wallaanan ya ni"],
+            "touched": false
+        },
+        {
+            "id": 12,
+            "name": ["Fo su Boyidaana"],
+            "arabic": "الْبَاسِطُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 13,
+            "name": ["Tuuburagaana"],
+            "arabic": "التَّوَّابُ",
+            "quran": " إِنَّ اللَّهَ تَوَّابٌ رَحِيمٌ",
+            "translation": ["49:12", "Alla ya, Tuuburagaanan ya ni, komo sirun Rahinnaanan ya ni"],
+            "touched": false
+        },
+        {
+            "id": 14,
+            "name": ["Kuyu gaba kuyaana"],
+            "arabic": "الْجَوَادُ",
+            "quran": "...",
+            "translation": ["", ""],
+            "touched": false
+        },
+        {
+            "id": 15,
+            "name": ["Tunka faranfare"],
+            "arabic": "الْجَمِيلُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 16,
+            "name": ["Komon Nequndaana"],
+            "arabic": "الْجَبَّارُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّ",
+            "translation": ["59:23", "... komo sirunkiilu Taaxunda; fon su hakkaminda; kiitun Niyaana; Sogogume Tunka ..."],
+            "touched": false
+        },
+        {
+            "id": 17,
+            "name": ["Tunka Tangandaana"],
+            "arabic": "الْحَافِظُ",
+            "quran": " إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
+            "translation": ["11:57", "N kaman ŋa, Tangadaana ni fon su dan ŋa."],
+            "touched": false
+        },
+        {
+            "id": 18,
+            "name": ["Wasayen Tunka"],
+            "arabic": "اﻟْﺣَسِيبُ",
+            "quran": " وَكَفَىٰ بِاللَّهِ حَسِيبًا",
+            "translation": ["4:6", "Alla wase koroosindaana."],
+            "touched": false
+        },
+        {
+            "id": 19,
+            "name": ["Tagandaana Xoore"],
+            "arabic": "الْحَفِيظُ",
+            "quran": "فَاللَّهُ خَيْرٌ حَافِظًا ۖ وَهُوَ أَرْحَمُ الرَّاحِمِينَ",
+            "translation": ["12:64", "Alla ya ni Tangadaanon su foosiren ya ŋa. ..."],
+            "touched": false
+        },
+        {
+            "id": 20,
+            "name": ["Sorogondaana Sire"],
+            "arabic": "الحَفِيُّ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 21,
+            "name": ["Toŋun Tunka"],
+            "arabic": "الْحَقُّ",
+            "quran": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ",
+            "translation": ["23:116", "Alla nan kanlanka (ken dan ŋa), Tunka soobe ke ...."],
+            "touched": false
+        },
+        {
+            "id": 22,
+            "name": ["Kiiti sirun Karandaana"],
+            "arabic": "الْحَكِيمُ",
+            "quran": "وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+            "translation": ["14:4", "A ya ni kiiti sirun Karandaanan ŋa"],
+            "touched": false
+        },
+        {
+            "id": 23,
+            "name": ["Abada Birante"],
+            "arabic": "الْحَيُّ",
+            "quran": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ",
+            "translation": ["2:55", "Batiitunka su nta a du, Alla ga fe, Abadabirante ga ni, fon su Sorogandaana ni ..."],
+            "touched": false
+        },
+        {
+            "id": 24,
+            "name": ["Fi su rooroxen Tuwaana", "Tunka Nooxe"],
+            "arabic": "الْحَلِيمُ",
+            "quran": "إِنَّ اللَّهَ غَفُورٌ حَلِيمٌ",
+            "translation": ["3:155", "Alla ni xafarindaanan ya, moxoraneyen ya ni"],
+            "touched": false
+        },
+
+        {
+            "id": 25,
+            "name": ["Tiigeetunka"],
+            "arabic": "الْحَمِيدُ",
+            "quran": "إِنَّهُ حَمِيدٌ مَجِيدٌ",
+            "translation": ["11:73", "Alla ya, Tiigetunkan ya ni, Doronditunkan ya ni."],
+            "touched": false
+        },
+        {
+            "id": 26,
+            "name": ["Fiiŋaarañantoxaana", "Yaagana"],
+            "arabic": "الْحَيُّ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+
+        {
+            "id": 27,
+            "name": ["Naxankiita", "Fatamanda"],
+            "arabic": "الْحَكَمُ",
+            "quran": "أَفَغَيْرَ اللَّهِ أَبْتَغِي حَكَمًا وَهُوَ الَّذِي أَنْزَلَ إِلَيْكُمُ الْكِتَابَ مُفَصَّلً",
+            "translation": ["6:114", "Yaala, n na Alla tana ya muurunu kiitaana ya (in od xa naxan ŋa) ba, ...."],
+            "touched": false
+        },
+
+        {
+            "id": 28,
+            "name": ["Yingaana", "Fintuwaana"],
+            "arabic": "الْخَبِيرُ",
+            "quran": "قَالَ نَبَّأَنِيَ الْعَلِيمُ الْخَبِيرُ",
+            "translation": ["66:3", "A ti: Tuwaana xoore ke yan da in xibaari, Yingaana ga ni"],
+            "touched": false
+        },
+        {
+            "id": 29,
+            "name": ["Tagandaana"],
+            "arabic": "الْخَالِقُ",
+            "quran": "A ya ni Batiitunka ke be ya, A ya ga ni tagandaanan ŋa;",
+            "translation": ["59:24", "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ"],
+            "touched": false
+        },
+        {
+            "id": 30,
+            "name": ["Taganda Xoore"],
+            "arabic": "الْخَلَّاقُ",
+            "quran": "إِنَّ رَبَّكَ هُوَ الْخَلَّاقُ الْعَلِيمُ",
+            "translation": ["15:86", "An kaman ŋa, A ya ni Tagandaana siren ŋa, Tuwaana ga ni."],
+            "touched": false
+        },
+        {
+            "id": 31,
+            "name": ["Mullinwutundaana", "Hinnaana"],
+            "arabic": "الرَّفِيقُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 32,
+            "name": ["Yurumanadaana"],
+            "arabic": "الرَّؤُوفُ",
+            "quran": "إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ",
+            "translation": ["2:143", "Alla ni hinnaanan ya yi ti seron na, komo sirun Rahinnaanaanan ya ni"],
+            "touched": false
+        },
+
+
+        {
+            "id": 33,
+            "name": ["Kiteyun Neemanda"],
+            "arabic": "الرَّحْمَنُ",
+            "quran": "لرَّحْمَٰنُ",
+            "translation": ["55:1", "Neema loogonte Tunkan ke .."],
+            "touched": false
+        },
+        {
+            "id": 34,
+            "name": ["Komo sirun Rahinnaana"],
+            "arabic": "الرَّحِيمُ",
+            "quran": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+            "translation": ["1:1", "(O wa jopeene) ti Alla toxon ŋa, kiteyen Neemanda, komo sirun Rahinnaana."],
+            "touched": false
+        },
+        {
+            "id": 35,
+            "name": ["Arajaxandaana"],
+            "arabic": "الرَّزَّاقُ",
+            "quran": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+            "translation": ["51:58", "Alla ya, a ya ni arajaxandaanan ŋa, Senbedunke ga ni, a xoten ga ni."],
+            "touched": false
+        },
+
+        {
+            "id": 36,
+            "name": ["Korosindaana"],
+            "arabic": "الرَّقِيبُ",
+            "quran": "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ رَقِيبًا",
+            "translation": ["33:52", "Alla ni fon su koroosindaanan ya."],
+            "touched": false
+        },
+
+        {
+            "id": 37,
+            "name": ["Kamane"],
+            "arabic": "الرَّبُّ",
+            "quran": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+            "translation": ["1:2", "Tiigayen na Alla ya dan  ŋa, tageefoonun Kama"],
+            "touched": false
+        },
+        {
+            "id": 38,
+            "name": ["Naxasiyunkisiitunka", "Jamuduuron Tunka"],
+            "arabic": "السَّلاَمُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+            "translation": ["59:23", "A ya ni Batiitunka ke be, Batiitunka su ga nta a du A ya ga fe; Tunka maraana ga ni; fon su hakkaminda; kitun Niyaana; Sagogume; Tunka Dufuŋaana. Sennaxun wa Alla dan ŋa ...."],
+            "touched": false
+        },
+        {
+            "id": 39,
+            "name": ["Mukkaana"],
+            "arabic": "السَّمِيعُ",
+            "quran": " لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
+            "translation": ["42:11", "Fo wo fo nta xo Alla moxon ŋa. A ya ni Mugaanan ŋa, Wallaana ga ni"],
+            "touched": false
+        },
+        {
+            "id": 40,
+            "name": ["Sennaaxunun Koŋiitunka"],
+            "arabic": "السُّبُّوحُ",
+            "quran": " يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+            "translation": ["62:1", "Fon wa sennaaxunkoŋiini Alla dan ŋa, ke be su ga kanfato ku do ñiiñanfato ku noxon di. Tunka maraana, sennaxun Tunka ....."],
+            "touched": false
+        },
+        {
+            "id": 41,
+            "name": ["Maraana", "Kamane"],
+            "arabic": "السَّيِّدُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 42,
+            "name": ["Kuufandaana"],
+            "arabic": "الشَّاكِرُ",
+            "quran": "وَمَنْ تَطَوَّعَ خَيْرًا فَإِنَّ اللَّهَ شَاكِرٌ عَلِيمٌ",
+            "translation": ["2:158", "Alla ni golli sirun Tugandaanan ya, Tuwaanan ya yi"],
+            "touched": false
+        },
+        {
+            "id": 43,
+            "name": ["Kuufanda Sire", "Golli siri Tugandana"],
+            "arabic": "الشَّكُورُ",
+            "quran": "وَاللَّهُ شَكُورٌ حَلِيمٌ",
+            "translation": ["64:17", "Alla ya, golli sirun Tugandaanan ya ni, Tunka Nooxen ya ni."],
+            "touched": false
+        },
+        {
+            "id": 44,
+            "name": ["Seedaana", "Fiinun Hadaraana"],
+            "arabic": "الشَّهِيدُ",
+            "quran": "وَكَفَىٰ بِاللَّهِ شَهِيدًا",
+            "translation": ["4:79", "... Alla wase seedaana ya."],
+            "touched": false
+        },
+
+        {
+            "id": 45,
+            "name": ["Sellandaana", "Jaarandaana"],
+            "arabic": "الشَّافِي",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 46,
+            "name": ["Tunka Haaju Siraana", "Duransikkaana"],
+            "arabic": "الصَّمَدُ",
+            "quran": "...",
+            "translation": ["...", ""],
+            "touched": false
+        },
+        {
+            "id": 47,
+            "name": ["Tunka Senne"],
+            "arabic": "الطَّيِّبُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 48,
+            "name": ["Maxankutobanganton Tunka"],
+            "arabic": "الظَّاهِرُ",
+            "quran": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ",
+            "translation": ["57:3", "A ya ni Fanan do Lagaren  ŋa; A ya ni Tunka banganten  ŋa ..."],
+            "touched": false
+        },
+        {
+            "id": 49,
+            "name": ["Tuwaana"],
+            "arabic": "اَلْعَلِيْمُ",
+            "quran": " إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+            "translation": ["2:115", "Alla ni Tunka (neema) yuruwanten ya, Tuwaanan ya ni."],
+            "touched": false
+        },
+        {
+            "id": 50,
+            "name": ["Tunka Niyaana", "Tunka Senbente", "Seyegume"],
+            "arabic": "الْعَزِيزُ",
+            "quran": "وَاعْلَمْ أَنَّ اللَّهَ عَزِيزٌ حَكِيمٌ",
+            "translation": ["2:260", "An na a tu nan ti Alla ni Niyaanan ya I kiitun kanma, kiiti sirun Karandaanan ya ni"],
+            "touched": false
+        },
+        {
+            "id": 51,
+            "name": ["Tunka Dare"],
+            "arabic": "الْعَظِيمُ",
+            "quran": "وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+            "translation": ["2:255", "A ya ni Tunka kallanken ŋa, A daren ga ni."],
+            "touched": false
+        },
+        {
+            "id": 52,
+            "name": ["Fiiburu Buruxanda", "Yanpaana Fiburudangaana"],
+            "arabic": "الْعَفْوُ",
+            "quran": " إِنَّ اللَّهَ كَانَ عَفُوًّا غَفُورًا",
+            "translation": ["4:43", "Alla ni yanpaanan ya, xafarindaanan ya ni"],
+            "touched": false
+        },
+        {
+            "id": 53,
+            "name": ["Tuwaana Xoore"],
+            "arabic": "الْعَلِيمُ",
+            "quran": "إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+            "translation": ["2:115", "Alla ni Tunka (neema) yuruwanten ya, Tuwaanan ya ni."],
+            "touched": false
+        },
+        {
+            "id": 54,
+            "name": ["Kallanke"],
+            "arabic": "الْعَلِيُّ",
+            "quran": "وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+            "translation": ["2:255", "A ya ni Tunka kallanken ŋa, A daren ga ni."],
+            "touched": false
+        }, {
+            "id": 55,
+            "name": ["Fi gaben Xafaraana"],
+            "arabic": "الْغَفَّارُ",
+            "quran": "أَلَا هُوَ الْعَزِيزُ الْغَفَّارُ",
+            "translation": ["39:5", "Alla ya ni Niyaanan ŋa I kiitun kanma,  Xafarindaanan ga ni."],
+            "touched": false
+        }, {
+            "id": 56,
+            "name": ["Xafariyen Tunka"],
+            "arabic": "الْغَفُورُ",
+            "quran": "أَلَا إِنَّ اللَّهَ هُوَ الْغَفُورُ الرَّحِيمُ",
+            "translation": ["42:5", "Alla ya, A ya ni Xafarindaanan ŋa, komo sirun Neemandaana ga ni."],
+            "touched": false
+        }, {
+            "id": 57,
+            "name": ["Banna", "Fo gaben Maraana"],
+            "arabic": "الْغَنِيُّ",
+            "quran": "سُبْحَانَهُ ۖ هُوَ الْغَنِيُّ ۖ",
+            "translation": ["10:68", ".. A ya ni Kaaraanan ŋa."],
+            "touched": false
+        }, {
+            "id": 58,
+            "name": ["Wuñindaana", "Bagumanda", "Fatamanda"],
+            "arabic": "الْفَتَّاحُ",
+            "quran": "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِالْحَقِّ وَهُوَ الْفَتَّاحُ الْعَلِيمُ",
+            "translation": ["34:26", "An na ti: O kaman wa kafumandini o naxan ŋa (Laxiyaama kootan ŋa), saage A na kiiti o naxan ŋa ti toŋun ŋa, Aken ya ni kiitaana xooren ŋa, Tuwaana xoore ga ni"],
+            "touched": false
+        }, {
+            "id": 59,
+            "name": ["Fiinun Raniyaana", "Katudanŋaana"],
+            "arabic": "الْقَادِرُ",
+            "quran": "قُلْ هُوَ الْقَادِرُ عَلَىٰ أَنْ يَبْعَثَ عَلَيْكُمْ عَذَابًا مِنْ فَوْقِكُمْ أَوْ مِنْ تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُمْ بَأْسَ بَعْضٍ",
+            "translation": ["6:65", "An na ti: A ya ni Raniyaanan ŋa, ...."],
+            "touched": false
+        }, {
+            "id": 60,
+            "name": ["Niiyindaana", "Hakkamaana"],
+            "arabic": "الْقَاهِرُ",
+            "quran": "وَهُوَ الْقَاهِرُ فَوْقَ عِبَادِهِ",
+            "translation": ["6:61", "A ya ni niyindaanan ŋa i komon kanma"],
+            "touched": false
+        }, {
+            "id": 61,
+            "name": ["Gunundaana", "Ragandaana", "Tigitaana"],
+            "arabic": "الْقَابِضُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        }, {
+            "id": 62,
+            "name": ["Senoyen Maxankuti Tunka"],
+            "arabic": "الْقُدُّوسُ",
+            "quran": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+            "translation": ["62:1", "Fon wa sennaaxukoŋiini Alla dan ŋa, ... Tunka maraana sennaaxun Tunka, niyaana ga ni ..."],
+            "touched": false
+        }, {
+            "id": 63,
+            "name": ["Fi su Katudanŋaana"],
+            "arabic": "الْقَدِيرُ",
+            "quran": "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+            "translation": ["2:20", "Alla ni raniyaana ya fo wo fo dan ŋa"],
+            "touched": false
+        }, {
+            "id": 64,
+            "name": ["Tunka Tinte"],
+            "arabic": "الْقَرِيبُ",
+            "quran": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ",
+            "translation": ["2:186", "Selli In komon ga na an tirindi In ŋa, (an na ti): Nke Alla, N tinten ya ni i ya, ..."],
+            "touched": false
+        }, {
+            "id": 65,
+            "name": ["Senbente"],
+            "arabic": "الْقَوِيُّ",
+            "quran": "",
+            "translation": ["..", ".."],
+            "touched": false
+        }, {
+            "id": 66,
+            "name": ["Fiinnun su Hakkamaana"],
+            "arabic": "الْقَهَّارُ",
+            "quran": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ ...",
+            "translation": ["13:16", "An na ti: Alla ya ni fo fo su Tagandaanan  ŋa, a ya ni baanen ŋa, komon su Nequndaana ga ni"],
+            "touched": false
+        }, {
+            "id": 67,
+            "name": ["Fiinun  Sikkaana"],
+            "arabic": "الْقَيُّومُ",
+            "quran": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+            "translation": ["2:255", "Batiitunka su nta a du, Alla ya ga fe, Abadabirante ga ni, fon su Sorogandaana ni ..."],
+            "touched": false
+        },
+        {
+            "id": 68,
+            "name": ["Tunka Xoore"],
+            "arabic": "الْكَبِيرُ",
+            "quran": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+            "translation": ["13:9", "(Alla ya ni) fi manariganken do fi hadariganken Tuwaanan ŋa; (A ya ni Tunka) Daren ŋa, a Kanlanke ga ni"],
+            "touched": false
+        }, {
+            "id": 69,
+            "name": ["Xooronditunka", "Dronditunka"],
+            "arabic": "الْكَرِيمُ",
+            "quran": "يَا أَيُّهَا الْإِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+            "translation": ["82:6", "Ee haadamarenme ! Mannen da an marasa ti an Kamane ke ya, A daren ga ni"],
+            "touched": false
+        }, {
+            "id": 70,
+            "name": ["Mullin Goliñaŋaana", "Mullinsorogondaana", "Moxomoxonte"],
+            "arabic": "اللَّطِيفُ",
+            "quran": "وَهُوَ اللَّطِيفُ الْخَبِيرُ",
+            "translation": ["6:103", "... A wa goorinkatini ti i ya. A ya ni Tunka moxomoxonten ŋa, fin Tuwaana ga ni."],
+            "touched": false
+        }, {
+            "id": 71,
+            "name": ["Gamundaana", "Sirondaana"],
+            "arabic": "الْمُحْسِنُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        }, {
+            "id": 72,
+            "name": ["Komon Duntaŋaaxunda", "Kiilu Taaxundaana"],
+            "arabic": "الْمُؤْمِنُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+            "translation": ["59:23", "... komo sirun kiilu Taaxunda ..."],
+            "touched": false
+        }, {
+            "id": 73,
+            "name": ["Tunka Duwuruginda", "Dufufasaana"],
+            "arabic": "الْمُتَعَالُ",
+            "quran": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+            "translation": ["13:9", "(Alla ya ni) fi manariganken do fi hadariganken Tuwaanan ŋa; (A ya ni Tunka) Daren ŋa, a Kanlanke ga ni"],
+            "touched": false
+        }, {
+            "id": 74,
+            "name": ["Dufoŋoyen Tunka"],
+            "arabic": "الْمُتَكَبِّرُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+            "translation": ["59:23", "A ya ni Batiitunka ke be, Batiitunka su ga nta a du A ya ga fe; Tunka maraana ga ni; fon su hakkaminda; kitun Niyaana; Sagogume; Tunka Dufuŋaana ..."],
+            "touched": false
+        }
+
+        , {
+            "id": 75,
+            "name": ["Kendoyen Tunka", "Xotoyen Tunka"],
+            "arabic": "الْمَتِينُ",
+            "quran": " إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+            "translation": ["51:58", "Alla ya, a ya ni arajaxandaana ŋa, Senbedunke ga ni, a xoten ga ni."],
+            "touched": false
+        },
+
+        {
+            "id": 76,
+            "name": ["Tunka Ñumaana"],
+            "arabic": "الْمُجِيبُ",
+            "quran": "إِنَّ رَبِّي قَرِيبٌ مُجِيبٌ",
+            "translation": ["11:61", "N kaman ŋa a tinten ya ni, jaabindaanan ya ni."],
+            "touched": false
+        },
+
+        {
+            "id": 77,
+            "name": ["Dronditunka"],
+            "arabic": "الْمَجِيدُ",
+            "quran": " إِنَّهُ حَمِيدٌ مَجِيدٌ",
+            "translation": ["11:73", "Alla ya, Tiigetunkan ya ni, Doronditunkan ya ni."],
+            "touched": false
+        },
+        {
+            "id": 78,
+            "name": ["Tunka Goorinkataana"],
+            "arabic": "الْمُحِيطُ",
+            "quran": "وَاللَّهُ مُحِيطٌ بِالْكَافِرِينَ",
+            "translation": ["2:19", "Alla ni goorinkataanan ya yi ti kaafirinun ŋa."],
+            "touched": false
+        },
+        {
+            "id": 79,
+            "name": ["Giya Kininda", "Fo su suura Karanda"],
+            "arabic": "الْمُصَوِّرُ",
+            "quran": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ",
+            "translation": ["59:24", "A ya ni Batiitunka ke be ya, A ya ga ni tagandaanan ŋa; tagandun baarinda; suuranun Taganda."],
+            "touched": false
+        },
+        {
+            "id": 80,
+            "name": ["Katudanŋaana Xote"],
+            "arabic": "الْمُقْتَدِرُ",
+            "quran": "فِي مَقْعَدِ صِدْقٍ عِنْدَ مَلِيكٍ مُقْتَدِرٍ",
+            "translation": ["54:55", "Toŋu taaxuraxo ya, Tunkan noqun ŋa, Raniyaana ga ni"],
+            "touched": false
+        },
+        {
+            "id": 81,
+            "name": ["Biraadokinna"],
+            "arabic": "الْمُقِيتُ",
+            "quran": "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُقِيتًا",
+            "translation": ["4:85", "Alla ni Fon su Seyegumen ya"],
+            "touched": false
+        },
+        {
+            "id": 82,
+            "name": ["Tunka Maraana"],
+            "arabic": "الْمَلِكُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+            "translation": ["59:23", "A ya ni Batiitunka ke be, Batiitunka su ga nta a du A ya ga fe; Tunka maraana ga ni; ...."],
+            "touched": false
+        },
+        {
+            "id": 83,
+            "name": ["Mareetunka"],
+            "arabic": "الْمَلِيكُ",
+            "quran": "فِي مَقْعَدِ صِدْقٍ عِنْدَ مَلِيكٍ مُقْتَدِرٍ",
+            "translation": ["54:55", "Toŋu taaxuraxo ya, Tunkan noqun ŋa, Raniyaana ga ni"],
+            "touched": false
+        },
+        {
+            "id": 84,
+            "name": ["Komon Biisitunka"],
+            "arabic": "المَولَى",
+            "quran": "نِعْمَ الْمَوْلَىٰ وَنِعْمَ النَّصِيرُ",
+            "translation": ["8:40", "... Alla ya ni xa Kaaranlenman ŋa, Kaaranlenma siren ni a ya, Deemandaana siren ni a ya"],
+            "touched": false
+        },
+        {
+            "id": 85,
+            "name": ["Fon su kanma Kiitaana", "Komon su Hakkaminda"],
+            "arabic": "الْمُهَيْمِنُ",
+            "quran": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+            "translation": ["59:23", "A ya ni Batiitunka ke be, Batiitunka su ga nta a du A ya ga fe; Tunka maraana ga ni; fon su hakkaminda; kitun Niyaana; Sagogume; Tunka Dufuŋaana ..."],
+            "touched": false
+        },
+        {
+            "id": 86,
+            "name": ["Fon su Kininda", "Kuyaana Xoore"],
+            "arabic": "المُعْطِي",
+            "quran": "... وَاللَّهُ الْمُعْطِي وَأَنَا الْقَاسِمُ، ...",
+            "translation": ["Al-Buqaari", "..."],
+            "touched": false
+        },
+        {
+            "id": 87,
+            "name": ["Kaane sigindaana", "Kaane kandaana"],
+            "arabic": "الْمُقَدِّمُ",
+            "quran": "...",
+            "translation": ["...", "...."],
+            "touched": false
+        },
+        {
+            "id": 88,
+            "name": ["Falle sigindaana", "Halle toxindaana"],
+            "arabic": "الْمُؤَخِّرُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 89,
+            "name": ["Neema xooro Kinaana", "Neema Kuyaana"],
+            "arabic": "الْمَنَّانُ",
+            "quran": "...",
+            "translation": ["...", "..."],
+            "touched": false
+        },
+        {
+            "id": 90,
+            "name": ["Toŋu Bangandaana"],
+            "arabic": "الْمُبِينُ",
+            "quran": "يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+            "translation": ["24:25", "Ken koota ya, Alla na i batidiinan yinme tinmantan tuga i ya. I na a tu a koota nan ti Alla ya, a baane ya ni toŋun ŋa, a banganten ga ni."],
+            "touched": false
+        },
+        {
+            "id": 91,
+            "name": ["Deemanda Xoore"],
+            "arabic": "النَّصِيرُ",
+            "quran": "نِعْمَ الْمَوْلَىٰ وَنِعْمَ النَّصِيرُ",
+            "translation": ["8:40", "... Alla ya ni xa Kaaranlenman ŋa, Kaaranlenma siren ni a ya, Deemandaana siren ni a ya"],
+            "touched": false
+        },
+        {
+            "id": 92,
+            "name": ["Baane Kolooti"],
+            "arabic": "الْوَاحِدُ",
+            "quran": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ ...",
+            "translation": ["13:16", "An na ti: Alla ya ni fo fo su Tagandaanan  ŋa, a ya ni baanen ŋa, komon su Nequndaana ga ni"],
+            "touched": false
+        },
+        {
+            "id": 93,
+            "name": ["Fon su Falle Xeyaana"],
+            "quran": "وَإِنَّا لَنَحْنُ نُحْيِي وَنُمِيتُ وَنَحْنُ الْوَارِثُونَ",
+            "translation": ["15:23", " ... O ya ni fon su (falle) xeyaanon  ŋa"],
+            "arabic": "الْوَارِثُ",
+            "touched": false
+        },
+        {
+            "id": 94,
+            "name": ["Tunkaaxu yuruwante Dunke"],
+            "arabic": "الْوَاسِعُ",
+            "quran": "إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+            "translation": ["2:115", "Alla ni Tunka (neema) yuruwanten ya, Tuwaanan ya ni."],
+            "touched": false
+        },
+        {
+            "id": 95,
+            "name": ["Komon Xana Xanundaana"],
+            "arabic": "الْوَدُودُ",
+            "quran": " إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
+            "translation": ["11:90", "N kaman ŋa, Hinnaanan ya ni, Xanundaana ga ni"],
+            "touched": false
+        },
+
+        {
+            "id": 96,
+            "name": ["Komon Tuugura", "Komen Senbeera"],
+            "arabic": "الْوَكِيلُ",
+            "quran": "وَكَفَىٰ بِاللَّهِ وَكِيلًا",
+            "translation": ["4:81", "Alla wase tuugura ya fiinun tigitinden ŋa."],
+            "touched": false
+        },
+        {
+            "id": 97,
+            "name": ["Fiinun Biisaana", "Komo sirun Kaaranlenma"],
+            "arabic": "الْوَلِيُّ",
+            "quran": "وَهُوَ الْوَلِيُّ الْحَمِيدُ",
+            "translation": ["42:28", "A ya ni fiinun Biisanan ŋa, Tiigetunka ga ni."],
+            "touched": false
+        },
+
+        {
+            "id": 98,
+            "name": ["Kuyaana Xoore"],
+            "arabic": "الْوَهَّابُ",
+            "quran": "أَمْ عِنْدَهُمْ خَزَائِنُ رَحْمَةِ رَبِّكَ الْعَزِيزِ الْوَهَّابِ",
+            "translation": ["38:9", "Ma an kanman neeman xarunlenmun ya na i maxa ya ba, Niyaana ga ni Aken be ya, Kuyaananxoore ga ni."],
+            "touched": false
+        },
+        {
+            "id": 99,
+            "name": ["Joonigankaaxu Tunka"],
+            "arabic": "الْوِتْرُ",
+            "quran": "...",
+            "translation": ["...", "..."],
             "touched": false
         }
 
     ]
 }
+
 
