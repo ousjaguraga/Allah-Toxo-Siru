@@ -65,7 +65,8 @@ struct SwipeableView: View {
                    }
                   
                }
-                VStack(alignment: .leading){                  Button(isAutoPlaying ? "Stop" : "Play All") {
+                VStack(alignment: .leading){
+                    Button(isAutoPlaying ? "Stop" : "Play All") {
                     isAutoPlaying.toggle()
                     first = true
                 }
