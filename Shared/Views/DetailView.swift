@@ -1,12 +1,15 @@
 import SwiftUI
 
-struct DetailView: View {
+struct DetailView: View, Animatable {
     var name: NameModel.Name
+    
+  
     
     // Gradient colors for background
     let gradientColors = Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.7)])
     let gradientIslamic = Gradient(colors: [Color.accentColor.opacity(0.7), Color.islamicGoldDark.opacity(0.7)])
-    
+        
+
     
     var body: some View {
         GeometryReader { geometry in
@@ -19,34 +22,26 @@ struct DetailView: View {
                 shape.strokeBorder(Color.green.opacity(0.7), lineWidth: 3)
                     .shadow(radius: 10)
                 
-                
-                
                 VStack(spacing: 20) {
-                    
                     VStack {
                         Text(name.quran)
-                            .font(.title) // Large, elegant font for the verse
+                            .font(.title) 
                             .multilineTextAlignment(.center)
                             .padding()
-                        
+                            
                         Text(name.translation[0])
-                            .font(.caption) // Smaller font for the translation or commentary
+                            .font(.caption)
                             .multilineTextAlignment(.center)
                             .padding()
-                    }
-                    
-                    .cornerRadius(10) // Rounded corners for the VStack
-                    .padding() // Padding around the VStack
-                    
-                    
-                    
+                     }
+                        .cornerRadius(10)
+                        .padding()
+                        
                     Text(name.arabic)
                         .font(.system(size: geometry.size.width * 0.2))
                         .foregroundColor(.white)
                         .shadow(radius: 5)
-                    
-                    
-                    
+                     
                     ForEach(name.name) { name in
                         Text(name)
                             .font(.system(size: geometry.size.width * 0.08))
@@ -55,27 +50,26 @@ struct DetailView: View {
                             .background(Color.white.opacity(0.7))
                             .padding(.vertical, 5)
                     }
-                    
-                    
+                       
                     // Soninke Translation
                     VStack {
                         Text(name.translation[1])
-                            .font(.title3) // Large, elegant font for the verse
+                            .font(.title3)
                             .multilineTextAlignment(.center)
                             .padding()
-                        
                         Text(name.translation[0])
-                            .font(.caption) // Smaller font for the translation or commentary
+                            .font(.caption)
                             .multilineTextAlignment(.center)
                             .padding()
-                    }
-                    
-                    .cornerRadius(10) // Rounded corners for the VStack
-                    .padding() // Padding around the VStack
-                    
-                    
-                    
-                }.opacity(name.touched ? 1 : 0)
+                       }
+                        
+                    .cornerRadius(10)
+                    .padding()
+                       
+                   }
+                    .rotation3DEffect(.degrees(180), axis: (0,1,0))
+                    .opacity(name.touched ? 1 : 0)
+        
                 
                 VStack(spacing: 20) {
                     ZStack {
@@ -109,17 +103,22 @@ struct DetailView: View {
                             .background(Color.white.opacity(0.7))
                             .padding(.vertical, 5)
                     }
-                }.opacity(name.touched ? 0 : 1)
-                
-                //.padding(20)
-                
+                }
+                .opacity(name.touched ? 0 : 1)
+               
                 
             }
             .padding(20).padding(.vertical, 50)
             .cornerRadius(25)
             .shadow(radius: 15)
-        }.background(Color.backgroundOne).edgesIgnoringSafeArea(.all)
+            .rotation3DEffect(.degrees(name.touched ? -180 : 0), axis: (0,1,0))
+          
+        }
+        .background(Color.backgroundOne).edgesIgnoringSafeArea(.all)
+        
+       
     }
+    
 }
 
 

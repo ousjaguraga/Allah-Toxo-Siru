@@ -73,7 +73,9 @@ struct SwipeableView: View {
                 
                 Spacer()
             }
-        }.padding(.bottom, -1).background(Color.backgroundOne)
+        }
+        .padding(.bottom, -1).background(Color.backgroundOne)
+       
     }
     
     
@@ -83,8 +85,10 @@ struct SwipeableView: View {
                 DetailView(name: name)
                     .tag(name.id)
                         .onTapGesture(count: 2, perform: {
-                            nameVM.touched(name.id)
-                            print(name)
+                            withAnimation(.easeInOut(duration: 1.5)){
+                                nameVM.touched(name.id)
+                            }
+                            
                         }).onDisappear {
                             if name.touched {
                             nameVM.touched(name.id)
@@ -97,6 +101,7 @@ struct SwipeableView: View {
         .edgesIgnoringSafeArea(.all)
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        
         
     }
 }
